@@ -9,6 +9,9 @@
     "dist",
     "src/Wireframes"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Matt Dunn",
   "homepage": "https://matt-dunn.github.io/",
   "description": "",
@@ -20,5 +23,6 @@
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.js,**/*.spec.js --root-mode upward",
     "build": "npm run build:types && npm run build:js"
-  }
+  },
+  "gitHead": "21105253ff272130456867ccea075a9bea6ab396"
 }
