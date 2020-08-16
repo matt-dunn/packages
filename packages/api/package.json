@@ -9,6 +9,6 @@
     "@types/express": "^4.17.7"
   },
   "scripts": {
-    "build": "babel src -d lib --ignore **/*.story.js,**/*.spec.js"
+    "build": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.js,**/*.spec.js --root-mode upward"
   }
 }

@@ -7,9 +7,13 @@
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
-    "lerna": "^3.22.1"
+    "@babel/preset-typescript": "^7.10.4",
+    "lerna": "^3.22.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
