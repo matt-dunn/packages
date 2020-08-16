@@ -17,6 +17,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec --parallel -- yarn build"
+    "build": "lerna exec --parallel -- yarn build",
+    "lerna:publish": "lerna publish"
   }
 }
