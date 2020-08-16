@@ -6,8 +6,7 @@
   "source": "src/index.ts",
   "license": "MIT",
   "files": [
-    "dist",
-    "src/Wireframes"
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
