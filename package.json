@@ -35,7 +35,8 @@
     "lerna:publish": "lerna publish --yes",
     "commit": "npx git-cz",
     "x": "lerna-changelog",
-    "xx": "release-it"
+    "xx": "release-it",
+    "prepublishOnly": "yarn build"
   },
   "config": {
     "commitizen": {
