@@ -4,6 +4,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-dunn/packages.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
@@ -26,7 +33,8 @@
     "build": "lerna exec --parallel -- yarn build",
     "lerna:publish": "lerna publish --yes",
     "commit": "npx git-cz",
-    "x": "lerna-changelog"
+    "x": "lerna-changelog",
+    "xx": "release-it"
   },
   "config": {
     "commitizen": {
@@ -44,12 +52,25 @@
     ]
   },
   "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {}
+    "git": {
+      "tagName": "v${version}",
+      "commitMessage": "v${version}",
+      "pushArgs": "--follow-tags --no-verify"
     },
+
+    "npm": {
+      "publish": false
+    },
+
     "github": {
       "release": true,
       "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
+    },
+
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md"
+      }
     }
   },
   "changelog": {

@@ -10,13 +10,5 @@
     "version": {
       "message": "chore(release): release"
     }
-  },
-  "changelog": {
-    "ignoreCommitters": ["allcontributors"],
-    "labels": {
-      "enhancement": ":rocket: New Feature",
-      "core": ":earth_asia: Core",
-      "bug": ":bug: Bug Fix"
-    }
   }
 }
