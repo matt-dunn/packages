@@ -18,13 +18,15 @@
     "cz-conventional-changelog": "3.2.0",
     "husky": "^4.2.5",
     "lerna": "^3.22.1",
+    "release-it-lerna-changelog": "^2.3.0",
     "typescript": "^3.9.7"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec --parallel -- yarn build",
     "lerna:publish": "lerna publish --yes",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "x": "lerna-changelog"
   },
   "config": {
     "commitizen": {
@@ -40,5 +42,20 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {}
+    },
+    "github": {
+      "release": true,
+      "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
+    }
+  },
+  "changelog": {
+    "labels": {
+      "feature": "New Feature",
+      "bug": "Bug Fix"
+    }
   }
 }
