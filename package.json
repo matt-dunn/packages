@@ -1,5 +1,6 @@
 {
   "name": "@matt-dunn/root",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -55,18 +56,16 @@
     "git": {
       "tagName": "v${version}",
       "commitMessage": "v${version}",
-      "pushArgs": "--follow-tags --no-verify"
+      "pushArgs": "--follow-tags --no-verify",
+      "requireCleanWorkingDir": false
     },
-
     "npm": {
       "publish": false
     },
-
     "github": {
       "release": true,
       "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
     },
-
     "plugins": {
       "release-it-lerna-changelog": {
         "infile": "CHANGELOG.md"
