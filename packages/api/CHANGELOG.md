@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.8.0...@matt-dunn/api@1.9.0) (2020-08-18)
+
+
+### Features
+
+* **api:** OOPS test ([7ec68b8](https://github.com/matt-dunn/packages/commit/7ec68b8b68729198759b8f5737d48924f05ee4fc))
+
+
+
+
+
 # [1.8.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.7.0...@matt-dunn/api@1.8.0) (2020-08-18)
 
 
