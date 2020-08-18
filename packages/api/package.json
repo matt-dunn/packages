@@ -1,6 +1,10 @@
 {
   "name": "@matt-dunn/api",
   "version": "1.7.0",
+  "author": "Matt Dunn",
+  "homepage": "https://matt-dunn.github.io/",
+  "description": "",
+  "keywords": [],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "source": "src/index.ts",
@@ -11,19 +15,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Matt Dunn",
-  "homepage": "https://matt-dunn.github.io/",
-  "description": "",
-  "keywords": [],
   "devDependencies": {
     "@types/express": "^4.17.7"
   },
   "scripts": {
-    "x": "lerna-changelog",
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.js,**/*.spec.js --root-mode upward",
-    "build": "npm run build:types && npm run build:js",
-    "release": "release-it --no-git.tag"
+    "build": "npm run build:types && npm run build:js"
   },
   "gitHead": "21105253ff272130456867ccea075a9bea6ab396"
 }
