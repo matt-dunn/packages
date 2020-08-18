@@ -34,7 +34,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec --since master --parallel -- yarn build",
+    "build": "lerna exec --since --parallel -- yarn build",
     "prerelease": "yarn build",
     "release": "lerna publish --yes --create-release=github",
     "commit": "npx git-cz"
