@@ -56,6 +56,7 @@
   },
   "release-it": {
     "git": {
+      "tag": false,
       "tagName": "v${version}",
       "commitMessage": "v${version}",
       "pushArgs": "--follow-tags --no-verify",
@@ -69,8 +70,7 @@
       "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
     },
     "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular",
+      "release-it-lerna-changelog": {
         "infile": "CHANGELOG.md"
       }
     }
