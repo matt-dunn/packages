@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.9.1...@matt-dunn/api@1.9.2) (2020-08-18)
+
+
+### Bug Fixes
+
+* **api:** fix the test ([bbfeca8](https://github.com/matt-dunn/packages/commit/bbfeca8c2ac543b5471854806cfebf5882017d8a))
+
+
+
+
+
 ## [1.9.1](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.9.0...@matt-dunn/api@1.9.1) (2020-08-18)
 
 **Note:** Version bump only for package @matt-dunn/api
