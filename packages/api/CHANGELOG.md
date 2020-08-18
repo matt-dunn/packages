@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.6.0...@matt-dunn/api@1.7.0) (2020-08-18)
+
+
+### Features
+
+* **api:** update README ([30f4b37](https://github.com/matt-dunn/packages/commit/30f4b37ccbaa8732765b912094c7c6f87c2a58e4))
+
+
+
+
+
 # [1.6.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.1.2...@matt-dunn/api@1.6.0) (2020-08-18)
 
 
