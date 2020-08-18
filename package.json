@@ -33,7 +33,6 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec --since --parallel -- yarn build",
     "prerelease": "yarn build",
     "release": "lerna publish --yes --create-release=github",
