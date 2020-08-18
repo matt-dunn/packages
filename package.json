@@ -22,6 +22,7 @@
     "@babel/preset-typescript": "^7.10.4",
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "@release-it/conventional-changelog": "^1.1.4",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "husky": "^4.2.5",
@@ -68,7 +69,8 @@
       "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
     },
     "plugins": {
-      "release-it-lerna-changelog": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
         "infile": "CHANGELOG.md"
       }
     }

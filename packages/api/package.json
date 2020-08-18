@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/api",
-  "version": "1.1.2",
+  "version": "1.5.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "source": "src/index.ts",
@@ -21,7 +21,8 @@
   "scripts": {
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.js,**/*.spec.js --root-mode upward",
-    "build": "npm run build:types && npm run build:js"
+    "build": "npm run build:types && npm run build:js",
+    "release": "release-it --no-git.tag"
   },
   "gitHead": "21105253ff272130456867ccea075a9bea6ab396"
 }
