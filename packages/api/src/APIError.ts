@@ -2,7 +2,7 @@ import {APPError} from "./APPError";
 
 export interface APIError extends APPError { status: number }
 
-expxort class APIError extends APPError implements APIError {
+expxxort class APIError extends APPError implements APIError {
   readonly name: string;
 
   constructor(message: string, code: number, public status: number) {

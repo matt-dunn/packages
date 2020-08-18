@@ -34,10 +34,10 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec --parallel -- yarn build",
+    "build": "lerna exec --since master --parallel -- yarn build",
+    "prerelease": "yarn build",
     "release": "lerna publish --yes --create-release=github",
-    "commit": "npx git-cz",
-    "prepublishOnly": "yarn build"
+    "commit": "npx git-cz"
   },
   "config": {
     "commitizen": {
