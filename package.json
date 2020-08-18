@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/root",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -33,7 +33,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec --parallel -- yarn build",
-    "lerna:publish": "lerna publish --yes",
+    "lerna:publish": "lerna publish --yes --create-release=github",
     "commit": "npx git-cz",
     "x": "lerna-changelog",
     "xx": "release-it",
@@ -69,11 +69,7 @@
       "release": true,
       "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
     },
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md"
-      }
-    }
+    "plugins": {}
   },
   "changelog": {
     "labels": {
