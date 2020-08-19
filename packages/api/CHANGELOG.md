@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.9.2...@matt-dunn/api@1.10.0) (2020-08-19)
+
+
+### Features
+
+* Initial jest setup ([fa24e9a](https://github.com/matt-dunn/packages/commit/fa24e9a8abc076f4a4317c63b9801c190ae6a992))
+
+
+
+
+
 ## [1.9.2](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.9.1...@matt-dunn/api@1.9.2) (2020-08-18)
 
 
