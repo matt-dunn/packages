@@ -1,0 +1,30 @@
+{
+  "name": "@matt-dunn/error",
+  "version": "1.0.0",
+  "author": "Matt Dunn",
+  "homepage": "https://matt-dunn.github.io/",
+  "description": "",
+  "keywords": [],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.46"
+  },
+  "scripts": {
+    "build:types": "tsc -b tsconfig.build.json",
+    "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.js,**/*.spec.js --root-mode upward",
+    "build": "npm run build:types && npm run build:js"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-router": "^5.2.0"
+  }
+}
