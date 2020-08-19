@@ -3,6 +3,9 @@
   "compilerOptions": {
     "baseUrl": "./packages",
     "paths": {
-    }
+    },
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   }
 }
