@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-middleware-saga-async-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Matt Dunn",
   "homepage": "https://matt-dunn.github.io/",
   "description": "",
@@ -23,7 +23,6 @@
     "prebuild": "npm run lint",
     "build": "npm run build:js && npm run build:types"
   },
-  "devDependencies": {},
   "dependencies": {
     "is-promise": "^4.0.0",
     "uuid": "^8.3.0"
