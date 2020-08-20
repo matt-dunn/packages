@@ -26,5 +26,5 @@
     "prebuild": "npm run lint",
     "build": "npm run build:types && npm run build:js"
   },
-  "gitHead": "21105253ff272130456867ccea075a9bea6ab396"
+  "gitHead": "00b14bc2a91505527abffe9a097293437f457f3b"
 }
