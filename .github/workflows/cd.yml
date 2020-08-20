@@ -28,6 +28,7 @@ jobs:
     - run: git config --global user.name "matt.j.dunn"
     - name: Install
       run: yarn install
+    - run: npm whoami
     - name: Build & Release
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
