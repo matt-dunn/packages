@@ -42,7 +42,8 @@
   "dependencies": {
     "lodash": "^4.17.20",
     "react": "^16.13.1",
-    "react-router": "^5.2.0"
+    "react-router": "^5.2.0",
+    "typesafe-actions": "^5.1.0"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
