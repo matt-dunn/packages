@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.8.0...@matt-dunn/error@1.9.0) (2020-08-20)
+
+
+### Features
+
+* **error:** Test 2 error package update ([3c6f659](https://github.com/matt-dunn/packages/commit/3c6f6594bb3a5c1690e3ac40c7eadb8b70261e9f))
+* **error:** Test update error package ([e75199c](https://github.com/matt-dunn/packages/commit/e75199ce48ba35408660e9c1fa3eac2574d96034))
+* Test update both packages ([c5f9939](https://github.com/matt-dunn/packages/commit/c5f9939cc1683af4625825f23ecfb49e7ee8491e))
+
+
+
+
+
 # [1.8.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.2.0...@matt-dunn/error@1.8.0) (2020-08-20)
 
 
