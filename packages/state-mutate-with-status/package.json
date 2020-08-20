@@ -26,7 +26,7 @@
     "prebuild": "npm run lint",
     "build": "npm run build:js && npm run build:types"
   },
-  "dependencies": {
+  "peerDependencies": {
     "is-promise": "4.*",
     "lodash": "4.*",
     "object-path-immutable": "4.*",
