@@ -1,6 +1,6 @@
 {
-  "name": "@matt-dunn/error",
-  "version": "1.8.0",
+  "name": "@matt-dunn/state-mutate-with-status",
+  "version": "1.0.0",
   "author": "Matt Dunn",
   "homepage": "https://matt-dunn.github.io/",
   "description": "",
@@ -27,8 +27,9 @@
     "build": "npm run build:js && npm run build:types"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-router": "^5.2.0"
-  },
-  "gitHead": "00b14bc2a91505527abffe9a097293437f457f3b"
+    "is-promise": "^4.0.0",
+    "lodash": "^4.17.20",
+    "object-path-immutable": "^4.1.0",
+    "simple-deep-freeze": "^0.0.2"
+  }
 }
