@@ -27,8 +27,8 @@
     "build": "npm run build:js && npm run build:types"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-router": "^5.2.0"
+    "react": "16.13.*",
+    "react-router": "5.*"
   },
   "gitHead": "00b14bc2a91505527abffe9a097293437f457f3b"
 }
