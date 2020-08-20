@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.2.1...@matt-dunn/error@1.3.0) (2020-08-20)
+
+
+### Features
+
+* **error:** Test update error package ([e75199c](https://github.com/matt-dunn/packages/commit/e75199ce48ba35408660e9c1fa3eac2574d96034))
+
+
+
+
+
 ## [1.2.1](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.2.0...@matt-dunn/error@1.2.1) (2020-08-20)
 
 **Note:** Version bump only for package @matt-dunn/error
