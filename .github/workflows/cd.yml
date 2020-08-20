@@ -18,6 +18,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        registry-url: 'https://registry.npmjs.org/'
     - uses: actions/checkout@v2.0.0
       with:
         # pulls all commits (needed for lerna / semantic release to correctly version)
@@ -30,12 +31,16 @@ jobs:
       run: yarn install
     - run: npm whoami
     - name: Build & Release
+      run: |
+        npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+        npm config set scope "@matt-dunn"
+        npm config list
+        yarn cd
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: yarn cd
     env:
       CI: true
 
