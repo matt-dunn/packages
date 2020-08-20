@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.4](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.13.3...@matt-dunn/api@1.13.4) (2020-08-20)
+
+**Note:** Version bump only for package @matt-dunn/api
+
+
+
+
+
 ## [1.13.3](https://github.com/matt-dunn/packages/compare/@matt-dunn/api@1.13.2...@matt-dunn/api@1.13.3) (2020-08-20)
 
 **Note:** Version bump only for package @matt-dunn/api
