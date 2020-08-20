@@ -30,9 +30,7 @@ jobs:
       run: yarn install
     - name: Build & Release
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       run: yarn cd
     env:
       CI: true
