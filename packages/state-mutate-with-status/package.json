@@ -26,10 +26,12 @@
     "prebuild": "npm run lint",
     "build": "npm run build:js && npm run build:types"
   },
+  "dependencies": {
+    "is-promise": "^4.0.0",
+    "object-path-immutable": "^4.1.0",
+    "simple-deep-freeze": "^0.0.2"
+  },
   "peerDependencies": {
-    "is-promise": "4.*",
-    "lodash": "4.*",
-    "object-path-immutable": "4.*",
-    "simple-deep-freeze": "0.0.*"
+    "lodash": "4.*"
   }
 }

@@ -39,6 +39,11 @@
     "lerna": "^3.22.1",
     "typescript": "^3.9.7"
   },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-router": "^5.2.0"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "lint": "eslint ./ --ext .jsx,.js,.ts,.tsx,.mdx --fix",
