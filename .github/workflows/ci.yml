@@ -19,6 +19,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - uses: actions/checkout@v2.0.0
+      with:
+        # pulls all commits (needed for lerna / semantic release to correctly version)
+        fetch-depth: "0"
+    # pulls all tags (needed for lerna / semantic release to correctly version)
+    - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
     - name: Install
       run: yarn install
     - name: Build
