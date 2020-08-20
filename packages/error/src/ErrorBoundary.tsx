@@ -7,18 +7,18 @@ import { ErrorContext, ErrorHandlerContext } from "./contexts";
 
 type ErrorComponentProps = {
   error: ErrorLike;
-}
+};
 
 type ErrorBoundaryProps = {
   ErrorComponent: ElementType<ErrorComponentProps>;
   handler?: HandleError;
-} & RouteComponentProps
+} & RouteComponentProps;
 
 type ErrorBoundaryState = {
   error?: ErrorLike;
   key: number;
   componentMeta: ErrorMeta | undefined | boolean;
-}
+};
 
 const callHandler = (ex: ErrorLike, handler: HandleError, location: Location, history: History, props: any, update?: Update) => {
   const { pathname, search, hash } = (typeof window !== "undefined" && window.location) || location;
@@ -110,13 +110,13 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     }
 
     return true;
-  }
+  };
 
   handleErrorEvent = (e: CustomEvent<ActionError>)=> {
     if (e.detail.error && this.handleError(e.detail.error)) {
       e.preventDefault();
     }
-  }
+  };
 
   render () {
     const { error, componentMeta, key } = this.state;

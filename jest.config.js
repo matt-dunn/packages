@@ -2,20 +2,20 @@ module.exports = {
   testEnvironment: "node",
   verbose: true,
   projects: [
-    '<rootDir>/packages/*/jest.config.js',
+    "<rootDir>/packages/*/jest.config.js",
   ],
-  coverageDirectory: '<rootDir>/coverage/',
+  coverageDirectory: "<rootDir>/coverage/",
   collectCoverageFrom: [
-    '<rootDir>/packages/*/src/**/*.{ts,tsx,js,jsx}',
+    "<rootDir>/packages/*/src/**/*.{ts,tsx,js,jsx}",
   ],
-  testURL: 'http://localhost/',
+  testURL: "http://localhost/",
   // moduleNameMapper: {
   //   '.json$': 'identity-obj-proxy',
   // },
   moduleDirectories: [
-    'node_modules',
+    "node_modules",
   ],
   snapshotSerializers: [
     // 'enzyme-to-json/serializer',
   ],
-}
+};

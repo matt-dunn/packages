@@ -5,7 +5,7 @@ import { ErrorContext } from "./contexts";
 type ErrorProviderProps = {
     value: ErrorContext;
     children: ReactNode;
-}
+};
 
 export const ErrorProvider = ({ value, children }: ErrorProviderProps) => {
   return (
