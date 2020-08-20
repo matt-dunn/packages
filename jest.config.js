@@ -7,6 +7,7 @@ module.exports = {
   coverageDirectory: "<rootDir>/coverage/",
   collectCoverageFrom: [
     "<rootDir>/packages/*/src/**/*.{ts,tsx,js,jsx}",
+    "!<rootDir>/packages/*/src/**/*.spec.{ts,tsx,js,jsx}",
   ],
   testURL: "http://localhost/",
   // moduleNameMapper: {

@@ -9,6 +9,10 @@ export const errorLike = (error: ErrorLike & {[index: string]: any}): ErrorLike 
   return rest;
 };
 
+export function isErrorLike (o: any): o is ErrorLike {
+  return o && o.message && o.name;
+}
+
 export * from "./types";
 
 export * from "./ErrorBoundary";
