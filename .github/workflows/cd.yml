@@ -24,6 +24,8 @@ jobs:
         fetch-depth: "0"
     # pulls all tags (needed for lerna / semantic release to correctly version)
     - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+    - run: git config --global user.email "matt-dunn"
+    - run: git config --global user.name "matt-dunn"
     - name: Install
       run: yarn install
     - name: Build & Release
