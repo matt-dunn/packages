@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/react-wireframes",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Matt Dunn",
   "homepage": "https://matt-dunn.github.io/",
   "description": "",
@@ -23,7 +23,6 @@
     "prebuild": "npm run lint",
     "build": "npm run build:js && npm run build:types"
   },
-  "devDependencies": {},
   "dependencies": {
     "classnames": "^2.2.6",
     "scroll-into-view-if-needed": "^2.2.25"
