@@ -4,7 +4,7 @@
  * @author Matt Dunn
  */
 
-import React from "react";
+import React, {useRef} from "react";
 import styled from "@emotion/styled";
 import { CSSTransition } from "react-transition-group";
 
@@ -45,14 +45,19 @@ const IdentifierContainer = styled(IdentifierBase)`
   }
 `;
 
-export const Identifier = ({ annotation, parentReference, show = true }: IdentifierProps) => (
-  <CSSTransition
-    timeout={250}
-    className="fade-Identifier"
-    in={show}
-    mountOnEnter
-    unmountOnExit
-  >
-    <IdentifierContainer data-annotation-identifier annotation={annotation} parentReference={parentReference} />
-  </CSSTransition>
-);
+export const Identifier = ({ annotation, parentReference, show = true }: IdentifierProps) => {
+  const nodeRef = useRef(null);
+
+  return (
+    <CSSTransition
+      nodeRef={nodeRef}
+      timeout={250}
+      className="fade-Identifier"
+      in={show}
+      mountOnEnter
+      unmountOnExit
+    >
+      <IdentifierContainer ref={nodeRef} data-annotation-identifier annotation={annotation} parentReference={parentReference} />
+    </CSSTransition>
+  );
+};

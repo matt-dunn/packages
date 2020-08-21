@@ -4,7 +4,7 @@
  * @author Matt Dunn
  */
 
-import React from "react";
+import React, {RefAttributes} from "react";
 import styled from "@emotion/styled";
 
 import { ParentReference, WireframeAnnotation } from "../api";
@@ -49,10 +49,12 @@ export const IdentifierContainer = styled.cite`
 
 const getParentId = (parent?: ParentReference): number[] | undefined => parent && [...getParentId(parent.api.getParentReference()) || [], parent.id];
 
-export const IdentifierBase = ({ annotation, parentReference, className }: IdentifierProps) => (
-  <IdentifierContainer data-annotation-identifier className={className}>
+export const IdentifierBase = React.forwardRef(({ annotation, parentReference, className }: IdentifierProps, ref) => (
+  <IdentifierContainer ref={ref as any} data-annotation-identifier className={className}>
     {[...(parentReference && getParentId(parentReference)) || [], annotation.id].join(".")}
   </IdentifierContainer>
-);
+));
 
-export const Identifier = React.memo<IdentifierProps>(IdentifierBase);
+IdentifierBase.displayName = "Identifier";
+
+export const Identifier = React.memo<IdentifierProps & RefAttributes<any>>(IdentifierBase);
