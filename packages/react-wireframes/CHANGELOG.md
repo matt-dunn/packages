@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/matt-dunn/packages/compare/@matt-dunn/react-wireframes@2.1.2...@matt-dunn/react-wireframes@2.1.3) (2020-08-21)
+
+
+### Bug Fixes
+
+* **react-wireframes:** fix annotation width ([14107ae](https://github.com/matt-dunn/packages/commit/14107ae9618b319c36a9834e5e300da989b6edad)), closes [#221](https://github.com/matt-dunn/packages/issues/221)
+
+
+
+
+
 ## [2.1.2](https://github.com/matt-dunn/packages/compare/@matt-dunn/react-wireframes@2.1.1...@matt-dunn/react-wireframes@2.1.2) (2020-08-21)
 
 **Note:** Version bump only for package @matt-dunn/react-wireframes
