@@ -23,6 +23,7 @@ const WireframeAnnotationNotesContainer = styled.ul`
   margin: 0;
   padding: 0;
   outline: none;
+  width: 100%;
   
   > li:not(:last-child) {
     border-bottom: 1px solid #ccc;
