@@ -8,6 +8,11 @@ module.exports = {
   collectCoverageFrom: [
     "<rootDir>/packages/*/src/**/*.{ts,tsx,js,jsx}",
     "!<rootDir>/packages/*/src/**/*.spec.{ts,tsx,js,jsx}",
+    "!<rootDir>/packages/*/src/**/*.stories.*",
+  ],
+  reporters: [
+    "default",
+    ["jest-junit", { outputDirectory: "./reports" }],
   ],
   testURL: "http://localhost/",
   // moduleNameMapper: {
@@ -17,6 +22,7 @@ module.exports = {
     "node_modules",
   ],
   snapshotSerializers: [
-    // 'enzyme-to-json/serializer',
+    "enzyme-to-json/serializer",
+    "jest-emotion"
   ],
 };

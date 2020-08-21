@@ -68,14 +68,16 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   // }
 
   componentDidMount() {
-    this.unlisten = this.props.history.listen(() => {
-      this.blocking = false;
+    if (this.props.history) {
+      this.unlisten = this.props.history.listen(() => {
+        this.blocking = false;
 
-      this.setState({
-        error: undefined,
-        componentMeta: undefined
+        this.setState({
+          error: undefined,
+          componentMeta: undefined
+        });
       });
-    });
+    }
 
     if (this.props.handler) {
       window.addEventListener("actionError", this.handleErrorEvent as EventListener);
@@ -136,3 +138,5 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 const withRouterErrorBoundary = withRouter(React.memo(ErrorBoundary));
 
 export { withRouterErrorBoundary as ErrorBoundary };
+
+export { ErrorBoundary as ErrorBoundaryUnWrapped };

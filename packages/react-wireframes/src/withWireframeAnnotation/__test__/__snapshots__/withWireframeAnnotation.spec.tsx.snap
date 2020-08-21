@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wireframe: withWireframeAnnotation should highlight annotation 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: withWireframeAnnotation should nest providers 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: withWireframeAnnotation should render annotation identifier when open 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: withWireframeAnnotation should render without identifier when closed 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: withWireframeAnnotation should show annotation highlighted 1`] = `ReactWrapper {}`;

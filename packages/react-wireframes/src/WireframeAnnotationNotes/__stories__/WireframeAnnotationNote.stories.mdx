@@ -1,0 +1,71 @@
+import {
+  Meta, Story, Props, Preview,
+} from "@storybook/addon-docs/blocks";
+import {
+  withKnobs, text, number,
+} from "@storybook/addon-knobs";
+
+import { WireframeAnnotationNote } from "../WireframeAnnotationNote";
+
+import { Container } from "./WireframeAnnotationNotes.stories.fixtures";
+
+<Meta title="@matt-dunn/react-wireframes/WireframeAnnotationNote" component={WireframeAnnotationNote} decorators={[withKnobs]} />
+
+# WireframeAnnotationNote
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare ligula nec leo facilisis ultricies. Fusce quis massa finibus neque volutpat commodo. Nunc blandit dolor in mi viverra, sit amet imperdiet lectus euismod. Mauris et urna vitae dolor accumsan vehicula quis ut urna. Aenean tincidunt enim in pellentesque fringilla. Duis sagittis sem ac quam egestas elementum. Nulla a velit a diam congue euismod.
+
+<Props of={WireframeAnnotationNote} />
+
+Pellentesque non sapien a dolor aliquet tempor sit amet non nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse tristique nulla vitae vestibulum lacinia. Cras sit amet luctus metus. Nunc malesuada erat eu magna dignissim porta. Sed vitae porttitor ligula. Fusce velit est, dapibus vehicula odio a, bibendum ornare nisi. Aenean sed odio et ipsum laoreet facilisis. Proin et lorem eget elit pellentesque tincidunt. Nullam ac urna sed massa tincidunt accumsan. Ut ultrices nibh ut consectetur tincidunt. Donec eget ullamcorper eros, vel congue mi. Suspendisse sapien erat, sagittis eget cursus nec, aliquam in mi.
+
+<Preview>
+    <Story name="Annotation">
+        <Container>
+            <WireframeAnnotationNote
+              annotation={{
+                id: number("id", 1),
+                count: 1,
+                Component: () => {},
+                options: {
+                  title: text("Title", "Test component", "1"),
+                  description: text("Description", "Test description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "1"),
+                },
+              }}
+            />
+        </Container>
+    </Story>
+    <Story name="Annotation with long description">
+        <Container>
+            <WireframeAnnotationNote
+              annotation={{
+                id: number("id", 1, {
+                  min: 1, step: 1, defaultValue: 10, value: 5,
+                }),
+                count: 1,
+                Component: () => {},
+                options: {
+                  title: text("Title", "Test component with long title and description", "2"),
+                  description: text("Description", "Pellentesque non sapien a dolor aliquet tempor sit amet non nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse tristique nulla vitae vestibulum lacinia. Cras sit amet luctus metus. Nunc malesuada erat eu magna dignissim porta.", "2"),
+                },
+              }}
+            />
+        </Container>
+    </Story>
+    <Story name="Annotation with highlight">
+        <Container>
+            <WireframeAnnotationNote
+              annotation={{
+                id: number("id", 1),
+                count: 1,
+                Component: () => {},
+                options: {
+                  title: text("Title", "Test component", "3"),
+                  description: text("Description", "Test description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "3"),
+                },
+              }}
+              isHighlighted
+            />
+        </Container>
+    </Story>
+</Preview>

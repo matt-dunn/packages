@@ -1,6 +1,6 @@
 module.exports = {
-  name: "state-mutate-with-status",
-  displayName: "state-mutate-with-status",
+  name: "redux-utils",
+  displayName: "redux-utils",
   testMatch: [`${__dirname}/src/**/*.spec.{js,jsx,ts,tsx}`],
   rootDir: "../../",
 };

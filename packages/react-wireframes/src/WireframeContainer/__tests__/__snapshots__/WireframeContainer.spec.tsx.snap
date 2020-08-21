@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wireframe: WireframeContainer should create a controlled container 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should create a controlled container 2`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should create a controlled container 3`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should default to open 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should highlight annotation 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should highlight annotation 2`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should nest containers 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should render children with annotation options and wireframe components when open 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when close option is used 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when closed 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when toggle closed 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should render children with no wireframe components 1`] = `ReactWrapper {}`;
+
+exports[`Wireframe: WireframeContainer should support inline 1`] = `ReactWrapper {}`;

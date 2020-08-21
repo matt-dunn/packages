@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wireframe: WireframeAnnotationsNotes should render correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Wireframe: WireframeAnnotationsNotes should render correctly with highlight 1`] = `ShallowWrapper {}`;
