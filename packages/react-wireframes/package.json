@@ -10,7 +10,8 @@
   "source": "src/index.ts",
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "docs"
   ],
   "publishConfig": {
     "access": "public"
