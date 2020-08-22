@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  stories: ["../packages/**/src/**/*.stories.(ts|tsx|js|jsx|mdx)"],
+  stories: ["../packages/**/src/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
   addons: [
     {
       name: "@storybook/addon-docs",
@@ -25,7 +25,7 @@ module.exports = {
     //     },
     //   ],
     // });
-    config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx');
+    config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx', '.mdx');
     config.resolve.alias = {
       "src": path.join(__dirname, "..", "src"),
     };
