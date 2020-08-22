@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-import { withWireframeAnnotation } from "src/Wireframes";
+import {
+  withWireframeAnnotation,
+} from "../withWireframeAnnotation";
 import { API } from "../../api";
 
 const Section = styled.div`

@@ -5,7 +5,7 @@ import { withKnobs, boolean } from "@storybook/addon-knobs";
 
 import {
   WireframeContainer,
-} from "src/Wireframes";
+} from "../WireframeContainer";
 
 import {
   PreviewContainer as Preview, Main, WAHeader, WASection1, WASection2, WASection3, WASection4, WASection5, WAFooter, Controlled,
@@ -24,6 +24,7 @@ Pellentesque non sapien a dolor aliquet tempor sit amet non nunc. Class aptent t
 <Preview>
     <Story name="Default Open">
         <WireframeContainer
+          fixed={false}
           className="container"
         >
           <Main>
@@ -68,6 +69,7 @@ Pellentesque non sapien a dolor aliquet tempor sit amet non nunc. Class aptent t
 <Preview>
     <Story name="Default Closed">
         <WireframeContainer
+          fixed={false}
           className="container"
           defaultOpen={false}
         >
@@ -136,6 +138,7 @@ Suspendisse tristique nulla vitae vestibulum lacinia. Cras sit amet luctus metus
 <Preview>
     <Story name="No annotations">
         <WireframeContainer
+          fixed={false}
           className="container"
         >
             <Main />
