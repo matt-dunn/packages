@@ -4,8 +4,10 @@ import { Preview } from "@storybook/addon-docs/blocks";
 
 import {
   WireframeContainer,
+} from "../WireframeContainer";
+import {
   withWireframeAnnotation,
-} from "src/Wireframes";
+} from "../../withWireframeAnnotation";
 
 export const Main = styled.div`
   padding: 2em 4em;
@@ -108,7 +110,7 @@ const Options = styled.div`
   border-radius: 0 0 0.5rem 0;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.75);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10020;
@@ -173,6 +175,7 @@ export const Controlled = ({ className, isOpen, children }) => { // eslint-disab
         className={className}
         onToggleOpen={setOpen}
         open={open}
+        fixed={false}
       >
         {children}
       </WireframeContainer>

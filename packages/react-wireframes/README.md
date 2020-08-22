@@ -4,7 +4,7 @@ React component to annotate your components — useful for prototypes and proof 
 
 ---
 
-[Storybook](https://matt-dunn.github.io/react-wireframes/storybook/?path=/story/)
+[Storybook](https://matt-dunn.github.io/packages/storybook/?path=/docs/matt-dunn-react-wireframes/)
 
 [Demo](https://matt-dunn.github.io/react-wireframes/)
 
@@ -50,7 +50,7 @@ See [Storybook](https://matt-dunn.github.io/react-wireframes/storybook/?path=/st
 
 This example shows a set of components annotated using ```react-wireframes```. 
 
-![](./docs/assets/react-wireframes.gif)
+![](https://raw.githubusercontent.com/matt-dunn/packages/HEAD/packages/react-wireframes/docs/assets/react-wireframes.gif)
 
 
 ## Simple bare-bones example
