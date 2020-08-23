@@ -6,7 +6,7 @@ React component to annotate your components — useful for prototypes and proof 
 
 [Storybook](https://matt-dunn.github.io/packages/storybook/?path=/docs/matt-dunn-react-wireframes/)
 
-[Demo](https://matt-dunn.github.io/react-wireframes/)
+[Demo](https://matt-dunn.github.io/packages/react-wireframes/)
 
 [CodePen](https://codepen.io/matt-j-dunn/pen/NWqZmQY?editors=0010)
 
@@ -44,7 +44,7 @@ const AnnotatedMyComponent = withWireframeAnnotation({
 
 ## API
 
-See [Storybook](https://matt-dunn.github.io/react-wireframes/storybook/?path=/story/).
+See [Storybook](https://matt-dunn.github.io/packages/storybook/?path=/docs/matt-dunn-react-wireframes/).
 
 ## Example Implementation
 

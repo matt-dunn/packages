@@ -135,7 +135,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-const withRouterErrorBoundary = withRouter(React.memo(ErrorBoundary));
+const withRouterErrorBoundary = React.memo(withRouter(ErrorBoundary));
 
 export { withRouterErrorBoundary as ErrorBoundary };
 

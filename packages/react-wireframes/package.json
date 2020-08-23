@@ -22,7 +22,9 @@
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.story.tsx,**/*.spec.ts,**/*.spec.tsx --root-mode upward",
     "prebuild": "npm run lint",
-    "build": "npm run build:js && npm run build:types"
+    "build": "npm run build:js && npm run build:types && yarn run build:examples",
+    "start:examples": "parcel docs/examples/public/index.html --https --out-dir .build",
+    "build:examples": "parcel build docs/examples/public/index.html --public-url ./ --no-cache --out-dir ../../dist/packages/react-wireframes"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -33,5 +35,14 @@
     "@emotion/css": "10.*",
     "@emotion/styled": "10.*",
     "react-transition-group": "4.*"
+  },
+  "devDependencies": {
+    "@emotion/styled": "^10.0.27",
+    "bootstrap": "^4.5.2",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.26.10"
   }
 }
