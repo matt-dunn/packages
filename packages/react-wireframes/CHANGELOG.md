@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.6](https://github.com/matt-dunn/packages/compare/@matt-dunn/react-wireframes@2.1.5...@matt-dunn/react-wireframes@2.1.6) (2020-08-23)
+
+**Note:** Version bump only for package @matt-dunn/react-wireframes
+
+
+
+
+
 ## [2.1.5](https://github.com/matt-dunn/packages/compare/@matt-dunn/react-wireframes@2.1.3...@matt-dunn/react-wireframes@2.1.5) (2020-08-22)
 
 **Note:** Version bump only for package @matt-dunn/react-wireframes

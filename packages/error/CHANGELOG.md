@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.10](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.9.8...@matt-dunn/error@1.9.10) (2020-08-23)
+
+
+### Bug Fixes
+
+* **error:** Wrap wrapped component with React.memo ([e6812c5](https://github.com/matt-dunn/packages/commit/e6812c5c5354c4aa918e67544076360b454b0b59))
+
+
+
+
+
 ## [1.9.9](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.9.8...@matt-dunn/error@1.9.9) (2020-08-22)
 
 **Note:** Version bump only for package @matt-dunn/error
