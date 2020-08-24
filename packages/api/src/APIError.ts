@@ -13,7 +13,7 @@ export class APIError extends APPError implements APIError {
   }
 }
 
-export const withAPIError = async <P>(invoker: () => P) => {
+export const withAPIError = async <P>(invoker: () => Promise<P> | P) => {
   try {
     return await invoker();
   } catch (ex) {
