@@ -1,6 +1,6 @@
 import isEqual from "lodash/isEqual";
 
-import { Status, MetaStatus, symbolActiveTransactions } from "../";
+import { Status, MetaStatus, symbolActiveTransactions } from "./status";
 
 const getError = (metaStatus: MetaStatus, status: Status = {} as Status, isCurrent = true) => {
   if (isCurrent) {
