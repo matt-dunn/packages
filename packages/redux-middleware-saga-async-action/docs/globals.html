@@ -1,0 +1,644 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@matt-dunn/redux-middleware-saga-async-action</title>
+	<meta name="description" content="Documentation for @matt-dunn/redux-middleware-saga-async-action">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@matt-dunn/redux-middleware-saga-async-action</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@matt-dunn/redux-middleware-saga-async-action</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="globals.html#done" class="tsd-kind-icon">Done</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#pending" class="tsd-kind-icon">Pending</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#task" class="tsd-kind-icon">Task</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="globals.html#cancel_task_postfix" class="tsd-kind-icon">CANCEL_<wbr>TASK_<wbr>POSTFIX</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="globals.html#callasyncwithcancel" class="tsd-kind-icon">call<wbr>Async<wbr>With<wbr>Cancel</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#decoratemetawithstatus" class="tsd-kind-icon">decorate<wbr>Meta<wbr>With<wbr>Status</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#iscancelaction" class="tsd-kind-icon">is<wbr>Cancel<wbr>Action</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#makecancelaction" class="tsd-kind-icon">make<wbr>Cancel<wbr>Action</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#makecancelactionmatcher" class="tsd-kind-icon">make<wbr>Cancel<wbr>Action<wbr>Matcher</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#sagaasyncaction" class="tsd-kind-icon">saga<wbr>Async<wbr>Action</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#takeasync" class="tsd-kind-icon">take<wbr>Async</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="done" class="tsd-anchor"></a>
+					<h3>Done</h3>
+					<div class="tsd-signature tsd-kind-icon">Done<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L44">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>action: <span class="tsd-signature-type">StandardAction</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="pending" class="tsd-anchor"></a>
+					<h3>Pending</h3>
+					<div class="tsd-signature tsd-kind-icon">Pending<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L37">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span><span class="tsd-signature-symbol">; </span>task<span class="tsd-signature-symbol">: </span><a href="globals.html#task" class="tsd-signature-type">Task</a><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>task<span class="tsd-signature-symbol">: </span><a href="globals.html#task" class="tsd-signature-type">Task</a></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="task" class="tsd-anchor"></a>
+					<h3>Task</h3>
+					<div class="tsd-signature tsd-kind-icon">Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isCancelled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isRunning<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>setContext<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>toPromise<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L7">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:7</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>cancel<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L33">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:33</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Cancels the task (If it is still running)</p>
+											</div>
+										</div>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>error<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L23">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:23</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns task thrown error. <code>undefined</code> if task is still running</p>
+											</div>
+										</div>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Cancelled<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">is<wbr>Cancelled<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L15">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:15</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns true if the task has been cancelled</p>
+											</div>
+										</div>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Running<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">is<wbr>Running<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L11">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:11</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns true if the task hasn&#39;t yet returned or thrown an error</p>
+											</div>
+										</div>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>result<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">result&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L19">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:19</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns task return value. <code>undefined</code> if task is still running</p>
+											</div>
+										</div>
+										<h4 class="tsd-type-parameters-title">Type parameters</h4>
+										<ul class="tsd-type-parameters">
+											<li>
+												<h4>T</h4>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>set<wbr>Context<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">set<wbr>Context&lt;C&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L34">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:34</a></li>
+											</ul>
+										</aside>
+										<h4 class="tsd-type-parameters-title">Type parameters</h4>
+										<ul class="tsd-type-parameters">
+											<li>
+												<h4>C<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+											</li>
+										</ul>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>props: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>to<wbr>Promise<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-has-type-parameter">
+									<li class="tsd-signature tsd-kind-icon">to<wbr>Promise&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L29">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:29</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Returns a Promise which is either:</p>
+												<ul>
+													<li>resolved with task&#39;s return value</li>
+													<li>rejected with task&#39;s thrown error</li>
+												</ul>
+											</div>
+										</div>
+										<h4 class="tsd-type-parameters-title">Type parameters</h4>
+										<ul class="tsd-type-parameters">
+											<li>
+												<h4>T</h4>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="cancel_task_postfix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> CANCEL_<wbr>TASK_<wbr>POSTFIX</h3>
+					<div class="tsd-signature tsd-kind-icon">CANCEL_<wbr>TASK_<wbr>POSTFIX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"$CANCEL$"</span><span class="tsd-signature-symbol"> = &quot;$CANCEL$&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L55">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:55</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="callasyncwithcancel" class="tsd-anchor"></a>
+					<h3>call<wbr>Async<wbr>With<wbr>Cancel</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">call<wbr>Async<wbr>With<wbr>Cancel<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span>, done<span class="tsd-signature-symbol">?: </span><a href="globals.html#done" class="tsd-signature-type">Done</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Generator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L63">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>action: <span class="tsd-signature-type">StandardAction</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> done: <a href="globals.html#done" class="tsd-signature-type">Done</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Generator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="decoratemetawithstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> decorate<wbr>Meta<wbr>With<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">decorate<wbr>Meta<wbr>With<wbr>Status&lt;M&gt;<span class="tsd-signature-symbol">(</span>transactionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MetaStatus</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"transactionId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, meta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ActionMeta</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L48">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>M<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ActionMeta</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>status: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MetaStatus</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"transactionId"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> meta: <span class="tsd-signature-type">M</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">M</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ActionMeta</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Name<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L53">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>action: <span class="tsd-signature-type">StandardAction</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="iscancelaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Cancel<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Cancel<wbr>Action<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StandardAction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L59">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:59</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>action: <span class="tsd-signature-type">StandardAction</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="makecancelaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Cancel<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Cancel<wbr>Action<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L57">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:57</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="makecancelactionmatcher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Cancel<wbr>Action<wbr>Matcher</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Cancel<wbr>Action<wbr>Matcher<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L61">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="sagaasyncaction" class="tsd-anchor"></a>
+					<h3>saga<wbr>Async<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">saga<wbr>Async<wbr>Action<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Generator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ForkEffect</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L144">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:144</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Generator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ForkEffect</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="takeasync" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> take<wbr>Async</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">take<wbr>Async<span class="tsd-signature-symbol">(</span>saga<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ForkEffect</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/matt-dunn/packages/blob/e2efed5/packages/redux-middleware-saga-async-action/src/sagaAsyncAction.ts#L112">redux-middleware-saga-async-action/src/sagaAsyncAction.ts:112</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>saga: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ForkEffect</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals current ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#done" class="tsd-kind-icon">Done</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#pending" class="tsd-kind-icon">Pending</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#task" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#cancel_task_postfix" class="tsd-kind-icon">CANCEL_<wbr>TASK_<wbr>POSTFIX</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#callasyncwithcancel" class="tsd-kind-icon">call<wbr>Async<wbr>With<wbr>Cancel</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#decoratemetawithstatus" class="tsd-kind-icon">decorate<wbr>Meta<wbr>With<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscancelaction" class="tsd-kind-icon">is<wbr>Cancel<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makecancelaction" class="tsd-kind-icon">make<wbr>Cancel<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makecancelactionmatcher" class="tsd-kind-icon">make<wbr>Cancel<wbr>Action<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sagaasyncaction" class="tsd-kind-icon">saga<wbr>Async<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#takeasync" class="tsd-kind-icon">take<wbr>Async</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
