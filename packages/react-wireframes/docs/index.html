@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@matt-dunn/react-wireframes</title>
+	<meta name="description" content="Documentation for @matt-dunn/react-wireframes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@matt-dunn/react-wireframes</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@matt-dunn/react-wireframes</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#matt-dunnreact-wireframes" id="matt-dunnreact-wireframes" style="color: inherit; text-decoration: none;">
+					<h1>@matt-dunn/react-wireframes</h1>
+				</a>
+				<p>React component to annotate your components — useful for prototypes and proof of concepts.</p>
+				<hr>
+				<p><a href="https://matt-dunn.github.io/packages/storybook/?path=/docs/matt-dunn-react-wireframes/">Storybook</a></p>
+				<p><a href="https://matt-dunn.github.io/packages/packages/react-wireframes/examples/">Demo</a></p>
+				<p><a href="https://matt-dunn.github.io/packages/packages/react-wireframes/docs/">Docs</a></p>
+				<p><a href="https://codepen.io/matt-j-dunn/pen/NWqZmQY?editors=0010">CodePen</a></p>
+				<hr>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h2>Getting Started</h2>
+				</a>
+				<pre><code class="language-sh">npm install --save @matt-dunn/react-wireframes</code></pre>
+				<p>or</p>
+				<pre><code class="language-sh">yarn add @matt-dunn/react-wireframes</code></pre>
+				<a href="#annotate-a-component" id="annotate-a-component" style="color: inherit; text-decoration: none;">
+					<h3>Annotate a component</h3>
+				</a>
+				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> AnnotatedMyComponent = withWireframeAnnotation({
+    <span class="hljs-attr">title</span>: <span class="hljs-string">&quot;MyComponent title&quot;</span>,
+    <span class="hljs-attr">description</span>: <span class="hljs-string">&quot;MyComponent description.&quot;</span>,
+})(MyComponent);</code></pre>
+				<a href="#wrap-your-application-with-the-container" id="wrap-your-application-with-the-container" style="color: inherit; text-decoration: none;">
+					<h3>Wrap your application with the container</h3>
+				</a>
+				<pre><code class="language-jsx">  &lt;WireframeContainer&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AnnotatedMyComponent</span> /&gt;</span></span>
+    {<span class="hljs-comment">/*...application*/</span>}
+  &lt;/WireframeContainer&gt;</code></pre>
+				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+					<h2>API</h2>
+				</a>
+				<p>See <a href="https://matt-dunn.github.io/packages/storybook/?path=/docs/matt-dunn-react-wireframes/">Storybook</a>.</p>
+				<a href="#example-implementation" id="example-implementation" style="color: inherit; text-decoration: none;">
+					<h2>Example Implementation</h2>
+				</a>
+				<p>This example shows a set of components annotated using <code>react-wireframes</code>. </p>
+				<p><img src="https://raw.githubusercontent.com/matt-dunn/packages/HEAD/packages/react-wireframes/docs/assets/react-wireframes.gif" alt=""></p>
+				<a href="#simple-bare-bones-example" id="simple-bare-bones-example" style="color: inherit; text-decoration: none;">
+					<h2>Simple bare-bones example</h2>
+				</a>
+				<pre><code class="language-jsx"><span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom&quot;</span>;
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+
+<span class="hljs-keyword">import</span> {
+    WireframeContainer, withWireframeAnnotation,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@matt-dunn/react-wireframes&quot;</span>;
+
+<span class="hljs-keyword">const</span> MyComponent = <span class="hljs-function">() =&gt;</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>Hello world<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span>;
+
+<span class="hljs-keyword">const</span> AnnotatedMyComponent = withWireframeAnnotation({
+    <span class="hljs-attr">title</span>: <span class="hljs-string">&quot;MyComponent title&quot;</span>,
+    <span class="hljs-attr">description</span>: <span class="hljs-string">&quot;MyComponent description.&quot;</span>,
+})(MyComponent);
+
+<span class="hljs-keyword">const</span> app = (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">WireframeContainer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">AnnotatedMyComponent</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">WireframeContainer</span>&gt;</span></span>
+);
+
+ReactDOM.render(
+  app,
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;app&quot;</span>),
+);</code></pre>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>The MIT License (MIT) Copyright (c) 2020 Matt Dunn</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#apioptions" class="tsd-kind-icon">APIOptions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#identifierprops" class="tsd-kind-icon">Identifier<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#opencallback" class="tsd-kind-icon">Open<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#parentreference" class="tsd-kind-icon">Parent<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotation" class="tsd-kind-icon">Wireframe<wbr>Annotation</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotationapi" class="tsd-kind-icon">Wireframe<wbr>AnnotationAPI</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotationoptions" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotationprops" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotations" class="tsd-kind-icon">Wireframe<wbr>Annotations</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotationsnoteprops" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Note<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeannotationsnotesprops" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Notes<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframecontainerprops" class="tsd-kind-icon">Wireframe<wbr>Container<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#wireframeproviderprops" class="tsd-kind-icon">Wireframe<wbr>Provider<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#usescrollelementintoviewprops" class="tsd-kind-icon">use<wbr>Scroll<wbr>Element<wbr>Into<wbr>View<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#activewireframeannotationcontext" class="tsd-kind-icon">Active<wbr>Wireframe<wbr>Annotation<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#identifierbase" class="tsd-kind-icon">Identifier<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#identifiercontainer" class="tsd-kind-icon">Identifier<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#identifiernote" class="tsd-kind-icon">Identifier<wbr>Note</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#noannotations" class="tsd-kind-icon">No<wbr>Annotations</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationcomponentcontext" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Component<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationcontext" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationnotescontainer" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Notes<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationsclose" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Close</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationscontainer" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationsnotecontainer" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Note<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationstoggle" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Toggle</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframeannotationswrapper" class="tsd-kind-icon">Wireframe<wbr>Annotations<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframebody" class="tsd-kind-icon">Wireframe<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wireframemaincontainer" class="tsd-kind-icon">Wireframe<wbr>Main<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#wrapper" class="tsd-kind-icon">Wrapper</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#transition" class="tsd-kind-icon">transition</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#transitionduration" class="tsd-kind-icon">transition<wbr>Duration</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#useisomorphiclayouteffect" class="tsd-kind-icon">use<wbr>Isomorphic<wbr>Layout<wbr>Effect</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#api" class="tsd-kind-icon">API</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#identifier" class="tsd-kind-icon">Identifier</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wireframeannotationnote" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Note</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wireframeannotationnotes" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Notes</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#wireframeannotationpropsinterfacedefinition" class="tsd-kind-icon">Wireframe<wbr>Annotation<wbr>Props<wbr>Interface<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wireframecontainer" class="tsd-kind-icon">Wireframe<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wireframeprovider" class="tsd-kind-icon">Wireframe<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getdisplayname" class="tsd-kind-icon">get<wbr>Display<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getparentid" class="tsd-kind-icon">get<wbr>Parent<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getwireframeannotation" class="tsd-kind-icon">get<wbr>Wireframe<wbr>Annotation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#updatewireframeannotation" class="tsd-kind-icon">update<wbr>Wireframe<wbr>Annotation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#useapi" class="tsd-kind-icon">use<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#uselocalstorage" class="tsd-kind-icon">use<wbr>Local<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#usescrollelementintoview" class="tsd-kind-icon">use<wbr>Scroll<wbr>Element<wbr>Into<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#withwireframeannotation" class="tsd-kind-icon">with<wbr>Wireframe<wbr>Annotation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#withwireframeannotationinterfacedefinition" class="tsd-kind-icon">with<wbr>Wireframe<wbr>Annotation<wbr>Interface<wbr>Definition</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
