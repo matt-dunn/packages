@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@matt-dunn/state-mutate-with-status</title>
-	<meta name="description" content="Documentation for @matt-dunn/state-mutate-with-status">
+	<title>@matt-dunn/error</title>
+	<meta name="description" content="Documentation for @matt-dunn/error">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@matt-dunn/state-mutate-with-status</a>
+					<a href="index.html" class="title">@matt-dunn/error</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1>@matt-dunn/state-mutate-with-status</h1>
+			<h1>@matt-dunn/error</h1>
 		</div>
 	</div>
 </header>
@@ -62,19 +62,19 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#matt-dunnstate-mutate-with-status" id="matt-dunnstate-mutate-with-status" style="color: inherit; text-decoration: none;">
-					<h1>@matt-dunn/state-mutate-with-status</h1>
+				<a href="#matt-dunnerror" id="matt-dunnerror" style="color: inherit; text-decoration: none;">
+					<h1>@matt-dunn/error</h1>
 				</a>
-				<p>State mutator with decorated status for async actions. Useful in reducers.</p>
+				<p>Error helpers and ErrorBoundary with React Router support.</p>
 				<hr>
-				<p><a href="https://matt-dunn.github.io/packages/packages/state-mutate-with-status/docs/">Docs</a></p>
+				<p><a href="https://matt-dunn.github.io/packages/packages/error/docs/">Docs</a></p>
 				<hr>
 				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
 					<h2>Getting Started</h2>
 				</a>
-				<pre><code class="language-sh">npm install --save @matt-dunn/state-mutate-with-status</code></pre>
+				<pre><code class="language-sh">npm install --save @matt-dunn/error</code></pre>
 				<p>or</p>
-				<pre><code class="language-sh">yarn add @matt-dunn/state-mutate-with-status</code></pre>
+				<pre><code class="language-sh">yarn add @matt-dunn/error</code></pre>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
@@ -91,6 +91,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter tsd-is-external">
+						<a href="classes/errorboundary.html" class="tsd-kind-icon">Error<wbr>Boundary</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#actionerror" class="tsd-kind-icon">Action<wbr>Error</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#actionmeta" class="tsd-kind-icon">Action<wbr>Meta</a>
 					</li>
@@ -100,11 +106,38 @@
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#decoratedwithstatus" class="tsd-kind-icon">Decorated<wbr>With<wbr>Status</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorboundaryprops" class="tsd-kind-icon">Error<wbr>Boundary<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorboundarystate" class="tsd-kind-icon">Error<wbr>Boundary<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorcomponentprops" class="tsd-kind-icon">Error<wbr>Component<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorcontext" class="tsd-kind-icon">Error<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorhandlercontext" class="tsd-kind-icon">Error<wbr>Handler<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorlike" class="tsd-kind-icon">Error<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errormeta" class="tsd-kind-icon">Error<wbr>Meta</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#errorproviderprops" class="tsd-kind-icon">Error<wbr>Provider<wbr>Props</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#getnewitemindex" class="tsd-kind-icon">Get<wbr>New<wbr>Item<wbr>Index</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#getpath" class="tsd-kind-icon">Get<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#handleerror" class="tsd-kind-icon">Handle<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#metastatus" class="tsd-kind-icon">Meta<wbr>Status</a>
@@ -130,8 +163,17 @@
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#statusupdate" class="tsd-kind-icon">Status<wbr>Update</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#update" class="tsd-kind-icon">Update</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#updatedstatus" class="tsd-kind-icon">Updated<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#errorcontext" class="tsd-kind-icon">Error<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#errorhandlercontext" class="tsd-kind-icon">Error<wbr>Handler<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#symbolactivetransactions" class="tsd-kind-icon">symbol<wbr>Active<wbr>Transactions</a>
@@ -139,11 +181,20 @@
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#symbolstatus" class="tsd-kind-icon">symbol<wbr>Status</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#withroutererrorboundary" class="tsd-kind-icon">with<wbr>Router<wbr>Error<wbr>Boundary</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#errorprovider" class="tsd-kind-icon">Error<wbr>Provider</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#metastatus" class="tsd-kind-icon">Meta<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#status" class="tsd-kind-icon">Status</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#callhandler" class="tsd-kind-icon">call<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#clone" class="tsd-kind-icon">clone</a>
@@ -159,6 +210,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#deserialize" class="tsd-kind-icon">deserialize</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#errorlike" class="tsd-kind-icon">error<wbr>Like</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#frozenupdatestate" class="tsd-kind-icon">frozen<wbr>Update<wbr>State</a>
@@ -177,6 +231,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#getupdatedstate" class="tsd-kind-icon">get<wbr>Updated<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#iserrorlike" class="tsd-kind-icon">is<wbr>Error<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#iserrormeta" class="tsd-kind-icon">is<wbr>Error<wbr>Meta</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isgetpath" class="tsd-kind-icon">is<wbr>Get<wbr>Path</a>
