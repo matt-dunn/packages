@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/state-mutate-with-status",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/state-mutate-with-status",
   "description": "State mutator with decorated status for async actions",
