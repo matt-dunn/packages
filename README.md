@@ -9,6 +9,4 @@
 
 ---
 
-{TODO}
-
 View all [packages](./packages).

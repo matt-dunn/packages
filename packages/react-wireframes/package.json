@@ -2,9 +2,21 @@
   "name": "@matt-dunn/react-wireframes",
   "version": "2.1.9",
   "author": "Matt Dunn",
-  "homepage": "https://matt-dunn.github.io/",
-  "description": "",
-  "keywords": [],
+  "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/react-wireframes",
+  "description": "React component to annotate your components — useful for prototypes and proof of concepts",
+  "keywords": [
+    "react",
+    "wireframe",
+    "typescript",
+    "prototype",
+    "prototyping",
+    "poc",
+    "mockup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-dunn/packages.git"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "source": "src/index.ts",
