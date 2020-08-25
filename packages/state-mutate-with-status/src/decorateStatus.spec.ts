@@ -1,4 +1,4 @@
-import { decorateStatus } from "./utils";
+import { decorateStatus } from "./decorateStatus";
 import { Status, MetaStatus, symbolActiveTransactions } from "./status";
 
 describe("decorateStatus", () => {

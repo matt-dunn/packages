@@ -1,8 +1,8 @@
-import nextState, { StandardAction, symbolStatus } from "./";
+import {updateState} from "./updateState";
+import {StandardAction} from "./types";
+import {symbolStatus} from "./status";
 
-
-
-describe("next state", () => {
+describe("updateState", () => {
   describe("Object state", () => {
     let state: any;
 
@@ -36,7 +36,7 @@ describe("next state", () => {
         }
       };
 
-      expect(nextState(state, actionProcessing, {
+      expect(updateState(state, actionProcessing, {
         path: ["item"]
       })).toMatchObject({
         item: {
@@ -62,7 +62,7 @@ describe("next state", () => {
         }
       };
 
-      expect(nextState(state, actionComplete, {
+      expect(updateState(state, actionComplete, {
         path: ["item"]
       })).toMatchObject({
         item: {
@@ -81,7 +81,7 @@ describe("next state", () => {
         payload: { text: "item 1 updated" }
       };
 
-      expect(nextState(state, actionWithDefaultStatus, {
+      expect(updateState(state, actionWithDefaultStatus, {
         path: ["item"]
       })).toMatchObject({
         item: {
@@ -103,7 +103,7 @@ describe("next state", () => {
         }
       };
 
-      expect(nextState(state, actionNestedState, {
+      expect(updateState(state, actionNestedState, {
         path: ["nested", "deep", "item"]
       })).toMatchObject({
         nested: {
@@ -133,7 +133,7 @@ describe("next state", () => {
         }
       };
 
-      expect(nextState(state, actionNestedStateComplete, {
+      expect(updateState(state, actionNestedStateComplete, {
         path: ["nested", "deep", "item"]
       })).toMatchObject({
         nested: {
@@ -179,7 +179,7 @@ describe("next state", () => {
         }
       };
 
-      expect([...nextState(state, actionProcessing, {
+      expect([...updateState(state, actionProcessing, {
         path: ["items"]
       }).items]).toMatchObject([
         {
@@ -202,7 +202,7 @@ describe("next state", () => {
         }
       };
 
-      expect([...nextState(state, actionComplete, {
+      expect([...updateState(state, actionComplete, {
         path: ["items"]
       }).items]).toMatchObject([
         {
@@ -229,7 +229,7 @@ describe("next state", () => {
         }
       };
 
-      expect([...nextState(state, actionCompleteNewItem, {
+      expect([...updateState(state, actionCompleteNewItem, {
         path: ["items"],
         autoDelete: true,
         autoInsert: true
@@ -257,7 +257,7 @@ describe("next state", () => {
         }
       };
 
-      expect([...nextState(state, actionCompleteNewItemFirst, {
+      expect([...updateState(state, actionCompleteNewItemFirst, {
         path: ["items"],
         autoDelete: true,
         autoInsert: true,
@@ -297,7 +297,7 @@ describe("next state", () => {
         }
       };
 
-      const updatedState = nextState(state, actionProcessingFirst, {
+      const updatedState = updateState(state, actionProcessingFirst, {
         path: ["items"]
       });
 
@@ -320,7 +320,7 @@ describe("next state", () => {
         }
       };
 
-      expect([...nextState(updatedState, actionProcessingSecond, {
+      expect([...updateState(updatedState, actionProcessingSecond, {
         path: ["items"]
       }).items]).toMatchObject([
         {
