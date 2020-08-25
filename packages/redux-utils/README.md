@@ -8,6 +8,18 @@ Redux utils.
 
 ---
 
+## Getting Started
+
+```sh
+npm install --save @matt-dunn/redux-utils
+```
+
+or
+
+```sh
+yarn add @matt-dunn/redux-utils
+```
+
 ## License
 
 The MIT License (MIT) Copyright (c) 2020 [Matt Dunn](https://matt-dunn.github.io/)
