@@ -7,4 +7,6 @@ const frozenUpdateState = <S, P extends S>(state: S, action: StandardAction<P>, 
 
 export default frozenUpdateState;
 
+export {Options} from "./updateState";
+export {StandardAction} from "./types";
 export * from "./status";
