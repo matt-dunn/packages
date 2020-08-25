@@ -55,7 +55,7 @@ export const Home = () => (
   <Main>
     <header>
       <h1>
-        <a href="https://github.com/matt-dunn/react-wireframes" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/matt-dunn/packages/tree/master/packages/react-wireframes" target="_blank" rel="noopener noreferrer">
           <code>
             @matt-dunn/
             <wbr />

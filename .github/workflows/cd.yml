@@ -19,37 +19,44 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org/'
+
     - uses: actions/checkout@v2.0.0
       with:
         # pulls all commits (needed for lerna / semantic release to correctly version)
         fetch-depth: "0"
-    # pulls all tags (needed for lerna / semantic release to correctly version)
-    - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-    - run: git config --global user.email "@matt.j.dunn"
-    - run: git config --global user.name "matt.j.dunn"
-    - name: Install
-      run: yarn install
-    - name: Build & Release
+
+    - name: Setup
       run: |
+        git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+        git config --global user.email "@bot"
+        git config --global user.name "bot"
         npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
         npm config set scope "@matt-dunn"
         npm config list
-        yarn cd
+
+    - name: Install
+      run: yarn install --frozen-lockfile
+
+    - name: Build & Release
+      run:  yarn cd
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@v1.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+
     env:
       CI: true
 

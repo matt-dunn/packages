@@ -19,21 +19,28 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
     - uses: actions/checkout@v2.0.0
       with:
         # pulls all commits (needed for lerna / semantic release to correctly version)
         fetch-depth: "0"
-    # pulls all tags (needed for lerna / semantic release to correctly version)
-    - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
+    - name: Setup
+    - run: |
+        git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
     - name: Install
-      run: yarn install
+      run: yarn install --frozen-lockfile
+
     - name: Build
       run: yarn ci
+
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@v1.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
     env:
       CI: true
 
