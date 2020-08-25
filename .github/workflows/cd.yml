@@ -33,6 +33,8 @@ jobs:
         npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
         npm config set scope "@matt-dunn"
         npm config list
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
     - name: Install
       run: yarn install --frozen-lockfile
