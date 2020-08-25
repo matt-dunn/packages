@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/notification",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/notification",
   "description": "Notification flux action",

@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-middleware-saga-async-action",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-middleware-saga-async-action",
   "description": "Redux Saga middleware for decorating async actions",
