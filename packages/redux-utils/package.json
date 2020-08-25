@@ -2,9 +2,16 @@
   "name": "@matt-dunn/redux-utils",
   "version": "1.0.5",
   "author": "Matt Dunn",
-  "homepage": "https://matt-dunn.github.io/",
-  "description": "",
-  "keywords": [],
+  "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-utils",
+  "description": "Redux utils",
+  "keywords": [
+    "redux",
+    "utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-dunn/packages.git"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "source": "src/index.ts",
@@ -16,12 +23,13 @@
     "access": "public"
   },
   "scripts": {
+    "build:docs": "typedoc --out ../../dist/packages/redux-utils/docs src --mode file --exclude \"**/*+(.spec|.e2e).*\" --excludeNotExported",
     "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx,.mdx --fix",
     "test": "jest --coverage --passWithNoTests",
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.spec.ts --root-mode upward",
     "prebuild": "npm run lint",
-    "build": "npm run build:js && npm run build:types"
+    "build": "npm run build:js && npm run build:types && yarn run build:docs"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.159"
