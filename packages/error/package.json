@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/error",
-  "version": "1.9.12",
+  "version": "1.9.13",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/error",
   "description": "Error utils",
