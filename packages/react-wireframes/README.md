@@ -1,4 +1,4 @@
-# @matt-dunn/react-wireframes
+# @matt-dunn/react-wireframes [![Actions Status](https://github.com/matt-dunn/packages/workflows/CI/badge.svg)](https://github.com/matt-dunn/packages/actions) [![NPM Package](https://badge.fury.io/js/%40matt-dunn%2Freact-wireframes.svg)](https://www.npmjs.com/package/@matt-dunn/react-wireframes)
 
 React component to annotate your components — useful for prototypes and proof of concepts.
 

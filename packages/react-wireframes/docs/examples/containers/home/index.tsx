@@ -105,7 +105,7 @@ export const Home = () => (
 
         <aside className="text-muted">
           <p>
-            Senior User Interface Developer
+            Senior User Interface / Full Stack Developer
           </p>
         </aside>
       </a>
