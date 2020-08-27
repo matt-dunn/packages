@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-utils",
   "description": "Redux utils",
