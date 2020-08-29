@@ -78,6 +78,6 @@ export const deserialize = (s: string): any => {
   });
 };
 
-export const getPayload = <TMetaStatus extends MetaStatus, P>(metaStatus: TMetaStatus, payload?: P | ErrorLike): P | ErrorLike | undefined => (!metaStatus.error && payload) || undefined;
+export const getPayload = <PayloadMetaStatus extends MetaStatus, P>(metaStatus: PayloadMetaStatus, payload?: P | ErrorLike): P | ErrorLike | undefined => (!metaStatus.error && payload) || undefined;
 
 
