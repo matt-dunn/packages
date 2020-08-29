@@ -8,13 +8,13 @@ import {Path} from "./types";
 
 import {decorateStatus} from "./decorateStatus";
 
-type UpdatedStatus<S, P> = {
+type UpdatedStatus<S> = {
   readonly updatedState: S;
-  readonly originalState?: P | null;
-  readonly isCurrent?: boolean;
+  readonly originalPathState: any;
+  readonly isBaseObject: boolean;
 };
 
-export const getUpdatedState = <S, P extends S, TMetaStatus extends MetaStatus>(state: S, payload: P | ErrorLike | undefined | null, metaStatus: TMetaStatus, path: Path, actionId?: string, options?: Options<S, P | ErrorLike>): UpdatedStatus<S, P> => {
+export const getUpdatedState = <S, P, PayloadMetaStatus extends MetaStatus>(state: S, payload: P | ErrorLike | undefined | null, metaStatus: PayloadMetaStatus, path: Path, actionId?: string, options?: Options<S, P | ErrorLike>): UpdatedStatus<S> => {
   const currentState = get(state, path);
 
   if (actionId && Array.isArray(currentState)) {
@@ -26,7 +26,8 @@ export const getUpdatedState = <S, P extends S, TMetaStatus extends MetaStatus>(
 
         return {
           updatedState: wrap(state).insert(path, Object.assign({}, payload, { [symbolStatus]: decorateStatus(metaStatus) }), getNewItemIndex ? getNewItemIndex(currentState, payload) : currentState.length).value(),
-          originalState: null // Ensure final payload is not set so this item can be removed from the array on failure
+          originalPathState: currentState,
+          isBaseObject: false
         };
       }
     } else if (payload === null && options?.autoDelete === true) {
@@ -35,9 +36,11 @@ export const getUpdatedState = <S, P extends S, TMetaStatus extends MetaStatus>(
           .del(
             [...path, index.toString()]
           )
-          .value()
+          .value(),
+        originalPathState: currentState,
+        isBaseObject: false
       };
-    } else {
+    } else if (index !== -1) {
       return {
         updatedState: wrap((payload && wrap(state).assign([...path, index.toString()], payload).value()) || state)
           .update(
@@ -45,12 +48,15 @@ export const getUpdatedState = <S, P extends S, TMetaStatus extends MetaStatus>(
             state => decorateStatus(metaStatus, state && state[symbolStatus])
           )
           .value(),
-        originalState: get(state, [...path, index.toString()])
+        originalPathState: currentState,
+        isBaseObject: false
       };
     }
 
     return {
-      updatedState: state
+      updatedState: state,
+      originalPathState: currentState,
+      isBaseObject: false
     };
   } else {
     const array = options?.appendArrayPath ? get(payload, options.appendArrayPath) : payload;
@@ -60,15 +66,15 @@ export const getUpdatedState = <S, P extends S, TMetaStatus extends MetaStatus>(
 
       return {
         updatedState: (array.reduce((state, item) => state.push(appendPath, item), wrap(state).assign(path, options.appendArrayPath ? omit(payload as any, options.appendArrayPath) : payload)).value()) || state,
-        originalState: currentState,
-        isCurrent: true
+        originalPathState: currentState,
+        isBaseObject: true
       };
     }
 
     return {
       updatedState: (payload && wrap(state).assign(path, payload).value()) || state,
-      originalState: currentState,
-      isCurrent: true
+      originalPathState: currentState,
+      isBaseObject: true
     };
   }
 };

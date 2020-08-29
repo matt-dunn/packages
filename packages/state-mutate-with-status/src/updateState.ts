@@ -45,7 +45,7 @@ export const updateState = <S, P extends S>(state: S, { meta, error, payload }: 
 
   const status = get(state, [...updatePath, symbolStatus]);
 
-  const { updatedState, isCurrent } = getUpdatedState(
+  const { updatedState, isBaseObject } = getUpdatedState(
     state,
     getPayload(metaStatus, payload),
     metaStatus,
@@ -56,6 +56,6 @@ export const updateState = <S, P extends S>(state: S, { meta, error, payload }: 
 
   return wrap(updatedState).set(
     [...updatePath, symbolStatus as any],
-    decorateStatus(metaStatus, status, isCurrent === true)
+    decorateStatus(metaStatus, status, isBaseObject === true)
   ).value();
 };
