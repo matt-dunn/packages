@@ -10,6 +10,6 @@ export const errorLike = (error: ErrorLike & {[index: string]: any}): ErrorLike 
 };
 
 export function isErrorLike (o: any): o is ErrorLike {
-  return o && o.message && o.name;
+  return Boolean(o && o.message && o.name);
 }
 
