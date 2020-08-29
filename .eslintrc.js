@@ -40,7 +40,7 @@ module.exports =  {
                 "plugin:@typescript-eslint/recommended",
             ],
             rules:  {
-                '@typescript-eslint/member-delimiter-style': ['error', {
+                "@typescript-eslint/member-delimiter-style": ["error", {
                     "multiline": {
                         "delimiter": "semi",
                         "requireLast": true
