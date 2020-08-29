@@ -329,4 +329,45 @@ describe("updateState", () => {
       ]);
     });
   });
+
+  it("should return promise payload", () => {
+    const action: StandardAction = {
+      type: "TEST",
+      payload: new Promise(() => {})
+    };
+
+    expect(updateState({}, action)).toEqual({});
+  });
+
+  it("should calculate path from function", () => {
+    const state = {
+      items: [
+        {
+          id: "1",
+          text: "item 1"
+        }
+      ]
+    };
+
+    const action: StandardAction = {
+      type: "TEST",
+      payload: { text: "item 1 updated" },
+      meta: {
+        id: "1",
+        $status: {
+          transactionId: "2",
+          processing: true,
+          complete: false
+        }
+      }
+    };
+
+    expect([...updateState(state, action, {
+      path: () => ["items"]
+    }).items]).toMatchObject([
+      {
+        text: "item 1 updated",
+      }
+    ]);
+  });
 });

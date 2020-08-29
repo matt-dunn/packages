@@ -109,7 +109,6 @@ describe("deserialize", () => {
     });
   });
 
-
   it("should return a deserialized object with array with status symbol property", () => {
     const a = [1, 2, 3];
 
