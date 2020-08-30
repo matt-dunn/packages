@@ -35,9 +35,12 @@ describe("ErrorBoundary", () => {
   it("should correctly show error", () => {
     const MockComponent = () => null;
 
+    const handler = jest.fn();
+
     const wrapper = shallow(
       <Component
         ErrorComponent={SimpleError}
+        handler={handler}
       >
         <MockComponent />
       </Component>,
@@ -48,5 +51,79 @@ describe("ErrorBoundary", () => {
     wrapper.find(MockComponent).simulateError(error);
 
     expect(wrapper).toMatchSnapshot();
+
+    expect(handler).not.toHaveBeenCalled();
+  });
+
+  it("should call error handler", () => {
+    const MockComponent = () => null;
+
+    const handler = jest.fn();
+
+    const wrapper = shallow(
+      <Component
+        ErrorComponent={SimpleError}
+        handler={handler}
+      >
+        <MockComponent />
+      </Component>,
+    );
+
+    const error = new Error("Mock error");
+
+    wrapper.find(MockComponent).simulateError(error);
+
+    const event = new CustomEvent("actionError", {
+      bubbles: true,
+      cancelable: true,
+      detail: {
+        type: "ERR",
+        error: new Error("Err")
+      }
+    });
+
+    const cancelled = !window.dispatchEvent(event);
+
+    expect(wrapper).toMatchSnapshot();
+
+    expect(handler).toBeCalledWith( new Error("Err"), expect.any(String), undefined, expect.any(Object), expect.any(Function));
+
+    expect(cancelled).toBe(false);
+  });
+
+  it("should call error handler with cancelled", () => {
+    const MockComponent = () => null;
+
+    const handler = jest.fn(() => true);
+
+    const wrapper = shallow(
+      <Component
+        ErrorComponent={SimpleError}
+        handler={handler}
+      >
+        <MockComponent />
+      </Component>,
+    );
+
+    const error = new Error("Mock error");
+
+    wrapper.find(MockComponent).simulateError(error);
+
+    const event = new CustomEvent("actionError", {
+      bubbles: true,
+      cancelable: true,
+      detail: {
+        type: "ERR",
+        error: new Error("Err")
+      }
+    });
+
+    const cancelled = !window.dispatchEvent(event);
+
+    expect(wrapper).toMatchSnapshot();
+
+    expect(handler).toBeCalledWith( new Error("Err"), expect.any(String), undefined, expect.any(Object), expect.any(Function));
+
+    expect(cancelled).toBe(true);
   });
 });

@@ -116,7 +116,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   };
 
   handleErrorEvent = (e: CustomEvent<ActionError>)=> {
-    if (e.detail.error && this.handleError(e.detail.error)) {
+    if (e?.detail?.error && this.handleError(e.detail.error)) {
       e.preventDefault();
     }
   };

@@ -29,7 +29,15 @@ global.cancelAnimationFrame = function cancelAnimationFrame(id) {
   clearTimeout(id);
 };
 
+const dispatchEvent = global.dispatchEvent;
+const CustomEvent = global.CustomEvent;
+const Event = global.Event;
+
 copyProps(window, global);
+
+global.dispatchEvent = dispatchEvent;
+global.CustomEvent = CustomEvent;
+global.Event = Event;
 
 // console.error = () => {};
 // console.warn = () => {};
