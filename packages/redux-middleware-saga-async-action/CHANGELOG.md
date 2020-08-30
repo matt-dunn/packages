@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.9](https://github.com/matt-dunn/packages/compare/@matt-dunn/redux-middleware-saga-async-action@1.0.8...@matt-dunn/redux-middleware-saga-async-action@1.0.9) (2020-08-30)
+
+**Note:** Version bump only for package @matt-dunn/redux-middleware-saga-async-action
+
+
+
+
+
 ## [1.0.8](https://github.com/matt-dunn/packages/compare/@matt-dunn/redux-middleware-saga-async-action@1.0.7...@matt-dunn/redux-middleware-saga-async-action@1.0.8) (2020-08-27)
 
 **Note:** Version bump only for package @matt-dunn/redux-middleware-saga-async-action
