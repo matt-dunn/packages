@@ -100,7 +100,7 @@ function* callAsyncWithCancel (action: StandardAction, done?: Done) {
 
       yield put({
         ...action,
-        payload: [],
+        payload: undefined,
         meta: decorateMetaWithStatus(transactionId, {
           cancelled: true,
         }, action.meta)
@@ -117,8 +117,6 @@ const takeAsync = (saga: (...args: any[]) => any, ...args: any[]) => fork(functi
   while (true) {
     const action = yield take((action: StandardAction) => isPromise(action.payload) || isCancelAction(action));
     const name = getName(action);
-
-    console.error("@@",name);
 
     if (isCancelAction(action)) {
       const cancelActionMatcher = makeCancelActionMatcher(name);

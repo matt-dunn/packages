@@ -51,6 +51,7 @@
     "jest-junit": "^11.1.0",
     "jsdom": "^16.4.0",
     "lerna": "^3.22.1",
+    "redux-saga-test-plan": "^4.0.0-rc.3",
     "typedoc": "^0.18.0",
     "typescript": "^3.9.7"
   },
