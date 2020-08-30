@@ -2,8 +2,9 @@ import React, { Component, ElementType } from "react";
 import { withRouter, RouteComponentProps } from "react-router";
 import { History, Location, UnregisterCallback } from "history";
 
-import { ErrorLike, ErrorMeta, HandleError, isErrorMeta, Update, ActionError } from "./types";
+import { ErrorLike, ErrorMeta, HandleError, Update, ActionError } from "./types";
 import { ErrorContext, ErrorHandlerContext } from "./contexts";
+import { isErrorMeta } from "./errorMeta";
 
 type ErrorComponentProps = {
   error: ErrorLike;
@@ -115,7 +116,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   };
 
   handleErrorEvent = (e: CustomEvent<ActionError>)=> {
-    if (e.detail.error && this.handleError(e.detail.error)) {
+    if (e?.detail?.error && this.handleError(e.detail.error)) {
       e.preventDefault();
     }
   };

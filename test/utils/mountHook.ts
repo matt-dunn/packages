@@ -4,16 +4,16 @@ import { mount } from "enzyme";
 type Context<P> = {
   current: P;
   error?: Error;
-}
+};
 
 type CreateHook<P> = {
   (): P;
-}
+};
 
 type WrappedHookProps<P> = {
   hookCreator: CreateHook<P>;
   context: Context<P>;
-}
+};
 
 function WrappedHook<P>({ hookCreator, context }: WrappedHookProps<P>) {
   try {
@@ -29,7 +29,7 @@ function WrappedHook<P>({ hookCreator, context }: WrappedHookProps<P>) {
 
 type MountedHook<P> = {
   context: Context<P>;
-}
+};
 
 export function mountHook<P>(hookCreator: CreateHook<P>): MountedHook<P> {
   const context = {} as Context<ReturnType<typeof hookCreator>>;

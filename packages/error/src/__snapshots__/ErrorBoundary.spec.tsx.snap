@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ErrorBoundary should correctly show error 1`] = `ShallowWrapper {}`;
+exports[`ErrorBoundary should call error handler 1`] = `
+<ContextProvider
+  key="0"
+  value={
+    Object {
+      "handleError": [Function],
+    }
+  }
+>
+  <SimpleError
+    error={[Error: Mock error]}
+  />
+</ContextProvider>
+`;
 
-exports[`ErrorBoundary should render correctly 1`] = `ShallowWrapper {}`;
+exports[`ErrorBoundary should call error handler with cancelled 1`] = `
+<ContextProvider
+  key="0"
+  value={
+    Object {
+      "handleError": [Function],
+    }
+  }
+>
+  <SimpleError
+    error={[Error: Mock error]}
+  />
+</ContextProvider>
+`;
+
+exports[`ErrorBoundary should correctly show error 1`] = `
+<ContextProvider
+  key="0"
+  value={
+    Object {
+      "handleError": [Function],
+    }
+  }
+>
+  <SimpleError
+    error={[Error: Mock error]}
+  />
+</ContextProvider>
+`;
+
+exports[`ErrorBoundary should render correctly 1`] = `
+<ContextProvider
+  key="0"
+  value={
+    Object {
+      "handleError": [Function],
+    }
+  }
+>
+  Simple
+</ContextProvider>
+`;

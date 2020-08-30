@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary should render with error 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "error": [Error: Mock error],
+    }
+  }
+>
+  Simple
+</ContextProvider>
+`;
+
+exports[`ErrorBoundary should render with no error 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "error": undefined,
+    }
+  }
+>
+  Simple
+</ContextProvider>
+`;

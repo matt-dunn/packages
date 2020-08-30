@@ -1,3 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wireframe: WireframeAnnotationsNote should render correctly 1`] = `ShallowWrapper {}`;
+exports[`Wireframe: WireframeAnnotationsNote should render correctly 1`] = `
+<WireframeAnnotationsNoteContainer
+  isHighlighted={false}
+>
+  <header>
+    <IdentifierNote
+      annotation={
+        Object {
+          "Component": [MockFunction],
+          "count": 1,
+          "id": 1,
+          "options": Object {
+            "description": "Test description",
+            "title": "Test component",
+          },
+        }
+      }
+    />
+    <h2>
+      Test component
+    </h2>
+  </header>
+  <article>
+    Test description
+  </article>
+</WireframeAnnotationsNoteContainer>
+`;
