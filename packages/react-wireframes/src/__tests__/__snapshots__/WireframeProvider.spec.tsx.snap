@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wireframe: WireframeProvider should render children 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeProvider should render children 1`] = `
+<WireframeProvider
+  api={Object {}}
+>
+  <div>
+    Child
+  </div>
+</WireframeProvider>
+`;

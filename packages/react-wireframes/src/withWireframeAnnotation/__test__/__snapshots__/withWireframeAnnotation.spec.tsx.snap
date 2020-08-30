@@ -1,11 +1,787 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wireframe: withWireframeAnnotation should highlight annotation 1`] = `ReactWrapper {}`;
+exports[`Wireframe: withWireframeAnnotation should highlight annotation 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WrappedWireframeAnnotation>
+    <Wrapper
+      className="outline"
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      show={true}
+    >
+      <span
+        className="outline css-1v9por-Wrapper-Wrapper eq41f6z0"
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <Identifier
+          annotation={
+            Object {
+              "Component": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "displayName": "withWireframeAnnotation(Component)",
+                "type": [Function],
+              },
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": <div>
+                  Description.
+                </div>,
+                "title": <div>
+                  Title
+                </div>,
+              },
+            }
+          }
+          show={true}
+        >
+          <CSSTransition
+            className="fade-Identifier"
+            classNames=""
+            in={true}
+            mountOnEnter={true}
+            nodeRef={
+              Object {
+                "current": <cite
+                  class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>,
+              }
+            }
+            timeout={250}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={false}
+              className="fade-Identifier"
+              enter={true}
+              exit={true}
+              in={true}
+              mountOnEnter={true}
+              nodeRef={
+                Object {
+                  "current": <cite
+                    class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>,
+                }
+              }
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={250}
+              unmountOnExit={true}
+            >
+              <IdentifierContainer
+                annotation={
+                  Object {
+                    "Component": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "displayName": "withWireframeAnnotation(Component)",
+                      "type": [Function],
+                    },
+                    "count": 1,
+                    "id": 1,
+                    "options": Object {
+                      "description": <div>
+                        Description.
+                      </div>,
+                      "title": <div>
+                        Title
+                      </div>,
+                    },
+                  }
+                }
+                className="fade-Identifier"
+                data-annotation-identifier={true}
+              >
+                <Identifier
+                  annotation={
+                    Object {
+                      "Component": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "displayName": "withWireframeAnnotation(Component)",
+                        "type": [Function],
+                      },
+                      "count": 1,
+                      "id": 1,
+                      "options": Object {
+                        "description": <div>
+                          Description.
+                        </div>,
+                        "title": <div>
+                          Title
+                        </div>,
+                      },
+                    }
+                  }
+                  className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                  data-annotation-identifier={true}
+                >
+                  <IdentifierContainer
+                    className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                    data-annotation-identifier={true}
+                  >
+                    <cite
+                      className="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0"
+                      data-annotation-identifier={true}
+                    >
+                      1
+                    </cite>
+                  </IdentifierContainer>
+                </Identifier>
+              </IdentifierContainer>
+            </Transition>
+          </CSSTransition>
+        </Identifier>
+        <withWireframeAnnotation(Component)>
+          <Component>
+            <div>
+              MOCK COMPONENT
+            </div>
+          </Component>
+        </withWireframeAnnotation(Component)>
+      </span>
+    </Wrapper>
+  </WrappedWireframeAnnotation>
+</WireframeProvider>
+`;
 
-exports[`Wireframe: withWireframeAnnotation should nest providers 1`] = `ReactWrapper {}`;
+exports[`Wireframe: withWireframeAnnotation should nest providers 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WrappedWireframeAnnotation
+    api={
+      Object {
+        "getAnnotations": [Function],
+        "getParentReference": [Function],
+        "highlightNote": [Function],
+        "isOpen": [Function],
+        "onOpen": [Function],
+        "register": [Function],
+        "setOpen": [Function],
+        "setOptions": [Function],
+        "setParentReference": [Function],
+        "unregister": [Function],
+      }
+    }
+  >
+    <Wrapper
+      className="outline"
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      show={true}
+    >
+      <span
+        className="outline css-1v9por-Wrapper-Wrapper eq41f6z0"
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <Identifier
+          annotation={
+            Object {
+              "Component": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "displayName": "withWireframeAnnotation(WireframeProvider)",
+                "type": [Function],
+              },
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": <div>
+                  Description.
+                </div>,
+                "title": <div>
+                  Title
+                </div>,
+              },
+            }
+          }
+          show={true}
+        >
+          <CSSTransition
+            className="fade-Identifier"
+            classNames=""
+            in={true}
+            mountOnEnter={true}
+            nodeRef={
+              Object {
+                "current": <cite
+                  class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>,
+              }
+            }
+            timeout={250}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={false}
+              className="fade-Identifier"
+              enter={true}
+              exit={true}
+              in={true}
+              mountOnEnter={true}
+              nodeRef={
+                Object {
+                  "current": <cite
+                    class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>,
+                }
+              }
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={250}
+              unmountOnExit={true}
+            >
+              <IdentifierContainer
+                annotation={
+                  Object {
+                    "Component": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "displayName": "withWireframeAnnotation(WireframeProvider)",
+                      "type": [Function],
+                    },
+                    "count": 1,
+                    "id": 1,
+                    "options": Object {
+                      "description": <div>
+                        Description.
+                      </div>,
+                      "title": <div>
+                        Title
+                      </div>,
+                    },
+                  }
+                }
+                className="fade-Identifier"
+                data-annotation-identifier={true}
+              >
+                <Identifier
+                  annotation={
+                    Object {
+                      "Component": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "displayName": "withWireframeAnnotation(WireframeProvider)",
+                        "type": [Function],
+                      },
+                      "count": 1,
+                      "id": 1,
+                      "options": Object {
+                        "description": <div>
+                          Description.
+                        </div>,
+                        "title": <div>
+                          Title
+                        </div>,
+                      },
+                    }
+                  }
+                  className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                  data-annotation-identifier={true}
+                >
+                  <IdentifierContainer
+                    className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                    data-annotation-identifier={true}
+                  >
+                    <cite
+                      className="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0"
+                      data-annotation-identifier={true}
+                    >
+                      1
+                    </cite>
+                  </IdentifierContainer>
+                </Identifier>
+              </IdentifierContainer>
+            </Transition>
+          </CSSTransition>
+        </Identifier>
+        <withWireframeAnnotation(WireframeProvider)
+          api={
+            Object {
+              "getAnnotations": [Function],
+              "getParentReference": [Function],
+              "highlightNote": [Function],
+              "isOpen": [Function],
+              "onOpen": [Function],
+              "register": [Function],
+              "setOpen": [Function],
+              "setOptions": [Function],
+              "setParentReference": [Function],
+              "unregister": [Function],
+            }
+          }
+        >
+          <WireframeProvider
+            api={
+              Object {
+                "getAnnotations": [Function],
+                "getParentReference": [Function],
+                "highlightNote": [Function],
+                "isOpen": [Function],
+                "onOpen": [Function],
+                "register": [Function],
+                "setOpen": [Function],
+                "setOptions": [Function],
+                "setParentReference": [Function],
+                "unregister": [Function],
+              }
+            }
+          >
+            children
+          </WireframeProvider>
+        </withWireframeAnnotation(WireframeProvider)>
+      </span>
+    </Wrapper>
+  </WrappedWireframeAnnotation>
+</WireframeProvider>
+`;
 
-exports[`Wireframe: withWireframeAnnotation should render annotation identifier when open 1`] = `ReactWrapper {}`;
+exports[`Wireframe: withWireframeAnnotation should render annotation identifier when open 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WrappedWireframeAnnotation>
+    <Wrapper
+      className="outline"
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      show={false}
+    >
+      <span
+        className="outline css-zv5lmx-Wrapper eq41f6z0"
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <Identifier
+          annotation={
+            Object {
+              "Component": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "displayName": "withWireframeAnnotation(Component)",
+                "type": [Function],
+              },
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": <div>
+                  Description.
+                </div>,
+                "title": <div>
+                  Title
+                </div>,
+              },
+            }
+          }
+          show={false}
+        >
+          <CSSTransition
+            className="fade-Identifier"
+            classNames=""
+            in={false}
+            mountOnEnter={true}
+            nodeRef={
+              Object {
+                "current": <cite
+                  class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>,
+              }
+            }
+            timeout={250}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={false}
+              className="fade-Identifier"
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={true}
+              nodeRef={
+                Object {
+                  "current": <cite
+                    class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>,
+                }
+              }
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={250}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Identifier>
+        <withWireframeAnnotation(Component)>
+          <Component>
+            <div>
+              MOCK COMPONENT
+            </div>
+          </Component>
+        </withWireframeAnnotation(Component)>
+      </span>
+    </Wrapper>
+  </WrappedWireframeAnnotation>
+</WireframeProvider>
+`;
 
-exports[`Wireframe: withWireframeAnnotation should render without identifier when closed 1`] = `ReactWrapper {}`;
+exports[`Wireframe: withWireframeAnnotation should render without identifier when closed 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WrappedWireframeAnnotation>
+    <Wrapper
+      className="outline"
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      show={false}
+    >
+      <span
+        className="outline css-zv5lmx-Wrapper eq41f6z0"
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <Identifier
+          annotation={
+            Object {
+              "Component": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "displayName": "withWireframeAnnotation(Component)",
+                "type": [Function],
+              },
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": <div>
+                  Description.
+                </div>,
+                "title": <div>
+                  Title
+                </div>,
+              },
+            }
+          }
+          show={false}
+        >
+          <CSSTransition
+            className="fade-Identifier"
+            classNames=""
+            in={false}
+            mountOnEnter={true}
+            nodeRef={
+              Object {
+                "current": null,
+              }
+            }
+            timeout={250}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={false}
+              className="fade-Identifier"
+              enter={true}
+              exit={true}
+              in={false}
+              mountOnEnter={true}
+              nodeRef={
+                Object {
+                  "current": null,
+                }
+              }
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={250}
+              unmountOnExit={true}
+            />
+          </CSSTransition>
+        </Identifier>
+        <withWireframeAnnotation(Component)>
+          <Component>
+            <div>
+              MOCK COMPONENT
+            </div>
+          </Component>
+        </withWireframeAnnotation(Component)>
+      </span>
+    </Wrapper>
+  </WrappedWireframeAnnotation>
+</WireframeProvider>
+`;
 
-exports[`Wireframe: withWireframeAnnotation should show annotation highlighted 1`] = `ReactWrapper {}`;
+exports[`Wireframe: withWireframeAnnotation should show annotation highlighted 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WrappedWireframeAnnotation
+    isHighlighted={true}
+  >
+    <Wrapper
+      className="outline outlined"
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      show={true}
+    >
+      <span
+        className="outline outlined css-1v9por-Wrapper-Wrapper eq41f6z0"
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <Identifier
+          annotation={
+            Object {
+              "Component": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "displayName": "withWireframeAnnotation(Component)",
+                "type": [Function],
+              },
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": <div>
+                  Description.
+                </div>,
+                "title": <div>
+                  Title
+                </div>,
+              },
+            }
+          }
+          show={true}
+        >
+          <CSSTransition
+            className="fade-Identifier"
+            classNames=""
+            in={true}
+            mountOnEnter={true}
+            nodeRef={
+              Object {
+                "current": <cite
+                  class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>,
+              }
+            }
+            timeout={250}
+            unmountOnExit={true}
+          >
+            <Transition
+              appear={false}
+              className="fade-Identifier"
+              enter={true}
+              exit={true}
+              in={true}
+              mountOnEnter={true}
+              nodeRef={
+                Object {
+                  "current": <cite
+                    class="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0 enter enter-active"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>,
+                }
+              }
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={250}
+              unmountOnExit={true}
+            >
+              <IdentifierContainer
+                annotation={
+                  Object {
+                    "Component": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "displayName": "withWireframeAnnotation(Component)",
+                      "type": [Function],
+                    },
+                    "count": 1,
+                    "id": 1,
+                    "options": Object {
+                      "description": <div>
+                        Description.
+                      </div>,
+                      "title": <div>
+                        Title
+                      </div>,
+                    },
+                  }
+                }
+                className="fade-Identifier"
+                data-annotation-identifier={true}
+              >
+                <Identifier
+                  annotation={
+                    Object {
+                      "Component": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "displayName": "withWireframeAnnotation(Component)",
+                        "type": [Function],
+                      },
+                      "count": 1,
+                      "id": 1,
+                      "options": Object {
+                        "description": <div>
+                          Description.
+                        </div>,
+                        "title": <div>
+                          Title
+                        </div>,
+                      },
+                    }
+                  }
+                  className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                  data-annotation-identifier={true}
+                >
+                  <IdentifierContainer
+                    className="fade-Identifier css-19vkmpt-IdentifierContainer e1c5ivo40"
+                    data-annotation-identifier={true}
+                  >
+                    <cite
+                      className="fade-Identifier e1c5ivo40 css-gb0ahe-IdentifierContainer-IdentifierContainer e11a1dwl0"
+                      data-annotation-identifier={true}
+                    >
+                      1
+                    </cite>
+                  </IdentifierContainer>
+                </Identifier>
+              </IdentifierContainer>
+            </Transition>
+          </CSSTransition>
+        </Identifier>
+        <withWireframeAnnotation(Component)>
+          <Component>
+            <div>
+              MOCK COMPONENT
+            </div>
+          </Component>
+        </withWireframeAnnotation(Component)>
+      </span>
+    </Wrapper>
+  </WrappedWireframeAnnotation>
+</WireframeProvider>
+`;

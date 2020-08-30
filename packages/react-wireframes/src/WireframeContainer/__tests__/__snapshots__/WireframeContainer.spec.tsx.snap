@@ -1,27 +1,2448 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wireframe: WireframeContainer should create a controlled container 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should create a controlled container 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  onToggleOpen={[MockFunction]}
+  open={false}
+>
+  <WireframeContainer
+    onToggleOpen={[MockFunction]}
+    open={false}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should create a controlled container 2`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should create a controlled container 2`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  onToggleOpen={[MockFunction]}
+  open={true}
+>
+  <WireframeContainer
+    onToggleOpen={[MockFunction]}
+    open={true}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should create a controlled container 3`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should create a controlled container 3`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  onToggleOpen={[MockFunction]}
+  open={false}
+>
+  <WireframeContainer
+    onToggleOpen={[MockFunction]}
+    open={false}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className="open css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes>
+                        <NoAnnotations>
+                          <div
+                            className="css-94sf93-NoAnnotations e19rueun1"
+                          >
+                            <p>
+                              No annotations on this page
+                            </p>
+                          </div>
+                        </NoAnnotations>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should default to open 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should default to open 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WireframeContainer>
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className="open css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes>
+                        <NoAnnotations>
+                          <div
+                            className="css-94sf93-NoAnnotations e19rueun1"
+                          >
+                            <p>
+                              No annotations on this page
+                            </p>
+                          </div>
+                        </NoAnnotations>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</WireframeProvider>
+`;
 
-exports[`Wireframe: WireframeContainer should highlight annotation 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should highlight annotation 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "Component": [MockFunction],
+            "count": 1,
+            "id": 1,
+            "options": Object {
+              "description": "Test description 1",
+              "title": "Test component 1",
+            },
+          },
+          <li
+            data-annotation-id="1"
+            data-highlighted="true"
+          >
+            <article
+              class="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+            >
+              <header>
+                <cite
+                  class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>
+                <h2>
+                  Test component 1
+                </h2>
+              </header>
+              <article>
+                Test description 1
+              </article>
+            </article>
+          </li>,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "Component": [MockFunction],
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": "Test description 1",
+                "title": "Test component 1",
+              },
+            },
+            <li
+              data-annotation-id="1"
+              data-highlighted="true"
+            >
+              <article
+                class="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+              >
+                <header>
+                  <cite
+                    class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>
+                  <h2>
+                    Test component 1
+                  </h2>
+                </header>
+                <article>
+                  Test description 1
+                </article>
+              </article>
+            </li>,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className="open css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes
+                        annotations={
+                          Array [
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 1,
+                              "options": Object {
+                                "description": "Test description 1",
+                                "title": "Test component 1",
+                              },
+                            },
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 2,
+                              "options": Object {
+                                "description": "Test description 2",
+                                "title": "Test component 2",
+                              },
+                            },
+                          ]
+                        }
+                        highlightedNote={
+                          Object {
+                            "Component": [MockFunction],
+                            "count": 1,
+                            "id": 1,
+                            "options": Object {
+                              "description": "Test description 1",
+                              "title": "Test component 1",
+                            },
+                          }
+                        }
+                      >
+                        <WireframeAnnotationNotesContainer
+                          tabIndex={0}
+                        >
+                          <ul
+                            className="css-1fsmxc6-WireframeAnnotationNotesContainer e19rueun0"
+                            tabIndex={0}
+                          >
+                            <li
+                              data-annotation-id={1}
+                              data-highlighted={true}
+                              key="1"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 1,
+                                    "options": Object {
+                                      "description": "Test description 1",
+                                      "title": "Test component 1",
+                                    },
+                                  }
+                                }
+                                isHighlighted={true}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={true}
+                                >
+                                  <article
+                                    className="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 1,
+                                            "options": Object {
+                                              "description": "Test description 1",
+                                              "title": "Test component 1",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 1,
+                                              "options": Object {
+                                                "description": "Test description 1",
+                                                "title": "Test component 1",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              1
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 1
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 1
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                            <li
+                              data-annotation-id={2}
+                              data-highlighted={false}
+                              key="2"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 2,
+                                    "options": Object {
+                                      "description": "Test description 2",
+                                      "title": "Test component 2",
+                                    },
+                                  }
+                                }
+                                isHighlighted={false}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={false}
+                                >
+                                  <article
+                                    className="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 2,
+                                            "options": Object {
+                                              "description": "Test description 2",
+                                              "title": "Test component 2",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 2,
+                                              "options": Object {
+                                                "description": "Test description 2",
+                                                "title": "Test component 2",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              2
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 2
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 2
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                          </ul>
+                        </WireframeAnnotationNotesContainer>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should highlight annotation 2`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should highlight annotation 2`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "Component": [MockFunction],
+            "count": 1,
+            "id": 1,
+            "options": Object {
+              "description": "Test description 1",
+              "title": "Test component 1",
+            },
+          },
+          <li
+            data-annotation-id="1"
+            data-highlighted="false"
+          >
+            <article
+              class="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+            >
+              <header>
+                <cite
+                  class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                  data-annotation-identifier="true"
+                >
+                  1
+                </cite>
+                <h2>
+                  Test component 1
+                </h2>
+              </header>
+              <article>
+                Test description 1
+              </article>
+            </article>
+          </li>,
+        ],
+        Array [
+          Object {
+            "Component": [MockFunction],
+            "count": 1,
+            "id": 2,
+            "options": Object {
+              "description": "Test description 2",
+              "title": "Test component 2",
+            },
+          },
+          <li
+            data-annotation-id="2"
+            data-highlighted="true"
+          >
+            <article
+              class="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+            >
+              <header>
+                <cite
+                  class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                  data-annotation-identifier="true"
+                >
+                  2
+                </cite>
+                <h2>
+                  Test component 2
+                </h2>
+              </header>
+              <article>
+                Test description 2
+              </article>
+            </article>
+          </li>,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "Component": [MockFunction],
+              "count": 1,
+              "id": 1,
+              "options": Object {
+                "description": "Test description 1",
+                "title": "Test component 1",
+              },
+            },
+            <li
+              data-annotation-id="1"
+              data-highlighted="false"
+            >
+              <article
+                class="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+              >
+                <header>
+                  <cite
+                    class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                    data-annotation-identifier="true"
+                  >
+                    1
+                  </cite>
+                  <h2>
+                    Test component 1
+                  </h2>
+                </header>
+                <article>
+                  Test description 1
+                </article>
+              </article>
+            </li>,
+          ],
+          Array [
+            Object {
+              "Component": [MockFunction],
+              "count": 1,
+              "id": 2,
+              "options": Object {
+                "description": "Test description 2",
+                "title": "Test component 2",
+              },
+            },
+            <li
+              data-annotation-id="2"
+              data-highlighted="true"
+            >
+              <article
+                class="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+              >
+                <header>
+                  <cite
+                    class="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                    data-annotation-identifier="true"
+                  >
+                    2
+                  </cite>
+                  <h2>
+                    Test component 2
+                  </h2>
+                </header>
+                <article>
+                  Test description 2
+                </article>
+              </article>
+            </li>,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className="open css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes
+                        annotations={
+                          Array [
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 1,
+                              "options": Object {
+                                "description": "Test description 1",
+                                "title": "Test component 1",
+                              },
+                            },
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 2,
+                              "options": Object {
+                                "description": "Test description 2",
+                                "title": "Test component 2",
+                              },
+                            },
+                          ]
+                        }
+                        highlightedNote={
+                          Object {
+                            "Component": [MockFunction],
+                            "count": 1,
+                            "id": 2,
+                            "options": Object {
+                              "description": "Test description 2",
+                              "title": "Test component 2",
+                            },
+                          }
+                        }
+                      >
+                        <WireframeAnnotationNotesContainer
+                          tabIndex={0}
+                        >
+                          <ul
+                            className="css-1fsmxc6-WireframeAnnotationNotesContainer e19rueun0"
+                            tabIndex={0}
+                          >
+                            <li
+                              data-annotation-id={1}
+                              data-highlighted={false}
+                              key="1"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 1,
+                                    "options": Object {
+                                      "description": "Test description 1",
+                                      "title": "Test component 1",
+                                    },
+                                  }
+                                }
+                                isHighlighted={false}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={false}
+                                >
+                                  <article
+                                    className="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 1,
+                                            "options": Object {
+                                              "description": "Test description 1",
+                                              "title": "Test component 1",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 1,
+                                              "options": Object {
+                                                "description": "Test description 1",
+                                                "title": "Test component 1",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              1
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 1
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 1
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                            <li
+                              data-annotation-id={2}
+                              data-highlighted={true}
+                              key="2"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 2,
+                                    "options": Object {
+                                      "description": "Test description 2",
+                                      "title": "Test component 2",
+                                    },
+                                  }
+                                }
+                                isHighlighted={true}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={true}
+                                >
+                                  <article
+                                    className="css-18lwsqv-WireframeAnnotationsNoteContainer-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 2,
+                                            "options": Object {
+                                              "description": "Test description 2",
+                                              "title": "Test component 2",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 2,
+                                              "options": Object {
+                                                "description": "Test description 2",
+                                                "title": "Test component 2",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              2
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 2
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 2
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                          </ul>
+                        </WireframeAnnotationNotesContainer>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should nest containers 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should nest containers 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "api": Object {
+                "getAnnotations": [Function],
+                "getParentReference": [Function],
+                "highlightNote": [Function],
+                "isOpen": [Function],
+                "onOpen": [Function],
+                "register": [Function],
+                "setOpen": [Function],
+                "setOptions": [Function],
+                "setParentReference": [Function],
+                "unregister": [Function],
+              },
+              "id": 42,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "api": Object {
+                    "getAnnotations": [Function],
+                    "getParentReference": [Function],
+                    "highlightNote": [Function],
+                    "isOpen": [Function],
+                    "onOpen": [Function],
+                    "register": [Function],
+                    "setOpen": [Function],
+                    "setOptions": [Function],
+                    "setParentReference": [Function],
+                    "unregister": [Function],
+                  },
+                  "id": 42,
+                },
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should render children with annotation options and wireframe components when open 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should render children with annotation options and wireframe components when open 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className="open css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes
+                        annotations={
+                          Array [
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 1,
+                              "options": Object {
+                                "description": "Test description 1",
+                                "title": "Test component 1",
+                              },
+                            },
+                            Object {
+                              "Component": [MockFunction],
+                              "count": 1,
+                              "id": 2,
+                              "options": Object {
+                                "description": "Test description 2",
+                                "title": "Test component 2",
+                              },
+                            },
+                          ]
+                        }
+                      >
+                        <WireframeAnnotationNotesContainer
+                          tabIndex={0}
+                        >
+                          <ul
+                            className="css-1fsmxc6-WireframeAnnotationNotesContainer e19rueun0"
+                            tabIndex={0}
+                          >
+                            <li
+                              data-annotation-id={1}
+                              data-highlighted={false}
+                              key="1"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 1,
+                                    "options": Object {
+                                      "description": "Test description 1",
+                                      "title": "Test component 1",
+                                    },
+                                  }
+                                }
+                                isHighlighted={false}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={false}
+                                >
+                                  <article
+                                    className="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 1,
+                                            "options": Object {
+                                              "description": "Test description 1",
+                                              "title": "Test component 1",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 1,
+                                              "options": Object {
+                                                "description": "Test description 1",
+                                                "title": "Test component 1",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              1
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 1
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 1
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                            <li
+                              data-annotation-id={2}
+                              data-highlighted={false}
+                              key="2"
+                            >
+                              <WireframeAnnotationNote
+                                annotation={
+                                  Object {
+                                    "Component": [MockFunction],
+                                    "count": 1,
+                                    "id": 2,
+                                    "options": Object {
+                                      "description": "Test description 2",
+                                      "title": "Test component 2",
+                                    },
+                                  }
+                                }
+                                isHighlighted={false}
+                              >
+                                <WireframeAnnotationsNoteContainer
+                                  isHighlighted={false}
+                                >
+                                  <article
+                                    className="css-d4vpif-WireframeAnnotationsNoteContainer ezgkvwx0"
+                                  >
+                                    <header>
+                                      <IdentifierNote
+                                        annotation={
+                                          Object {
+                                            "Component": [MockFunction],
+                                            "count": 1,
+                                            "id": 2,
+                                            "options": Object {
+                                              "description": "Test description 2",
+                                              "title": "Test component 2",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <Identifier
+                                          annotation={
+                                            Object {
+                                              "Component": [MockFunction],
+                                              "count": 1,
+                                              "id": 2,
+                                              "options": Object {
+                                                "description": "Test description 2",
+                                                "title": "Test component 2",
+                                              },
+                                            }
+                                          }
+                                          className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                        >
+                                          <IdentifierContainer
+                                            className="css-a79nxx-IdentifierNote ezgkvwx1"
+                                            data-annotation-identifier={true}
+                                          >
+                                            <cite
+                                              className="ezgkvwx1 css-ijkgfg-IdentifierContainer-IdentifierNote e11a1dwl0"
+                                              data-annotation-identifier={true}
+                                            >
+                                              2
+                                            </cite>
+                                          </IdentifierContainer>
+                                        </Identifier>
+                                      </IdentifierNote>
+                                      <h2>
+                                        Test component 2
+                                      </h2>
+                                    </header>
+                                    <article>
+                                      Test description 2
+                                    </article>
+                                  </article>
+                                </WireframeAnnotationsNoteContainer>
+                              </WireframeAnnotationNote>
+                            </li>
+                          </ul>
+                        </WireframeAnnotationNotesContainer>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when close option is used 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when close option is used 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when closed 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when closed 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when toggle closed 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should render children with annotation options but no wireframe components when toggle closed 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should render children with no wireframe components 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should render children with no wireframe components 1`] = `
+<ComponentTree
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+  defaultOpen={false}
+  onHighlightAnnotation={[MockFunction]}
+>
+  <WireframeContainer
+    defaultOpen={false}
+    onHighlightAnnotation={[MockFunction]}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className=""
+        data-test="container"
+        fixed={true}
+      >
+        <div
+          className=" css-1al2p55-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={true}
+              >
+                <div
+                  className="css-f9km6t-WireframeAnnotationsWrapper-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={false}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1mbxmqg-WireframeAnnotationsToggle-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={false}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</ComponentTree>
+`;
 
-exports[`Wireframe: WireframeContainer should support inline 1`] = `ReactWrapper {}`;
+exports[`Wireframe: WireframeContainer should support inline 1`] = `
+<WireframeProvider
+  api={
+    Object {
+      "getAnnotations": [Function],
+      "getParentReference": [Function],
+      "highlightNote": [Function],
+      "isOpen": [Function],
+      "onOpen": [Function],
+      "register": [Function],
+      "setOpen": [Function],
+      "setOptions": [Function],
+      "setParentReference": [Function],
+      "unregister": [Function],
+    }
+  }
+>
+  <WireframeContainer
+    fixed={false}
+  >
+    <WireframeProvider
+      api={
+        Object {
+          "getAnnotations": [Function],
+          "getParentReference": [Function],
+          "highlightNote": [Function],
+          "isOpen": [Function],
+          "onOpen": [Function],
+          "register": [Function],
+          "setOpen": [Function],
+          "setOptions": [Function],
+          "setParentReference": [Function],
+          "unregister": [Function],
+        }
+      }
+    >
+      <WireframeMainContainer
+        className="open"
+        data-test="container"
+        fixed={false}
+      >
+        <div
+          className="open css-1k2e6x5-WireframeMainContainer-WireframeMainContainer e17wjjt10"
+          data-test="container"
+        >
+          <WireframeBody>
+            <main
+              className="css-1fwajsa-WireframeBody e17wjjt11"
+            >
+              <div>
+                Child component 1
+              </div>
+              <div>
+                Child component 2
+              </div>
+            </main>
+          </WireframeBody>
+          <WireframeAnnotationsContainer
+            data-annotations-container={true}
+          >
+            <section
+              className="css-1nnszjf-WireframeAnnotationsContainer e17wjjt12"
+              data-annotations-container={true}
+            >
+              <WireframeAnnotationsWrapper
+                data-annotations={true}
+                fixed={false}
+              >
+                <div
+                  className="css-wt0z1f-WireframeAnnotationsWrapper e17wjjt13"
+                  data-annotations={true}
+                >
+                  <WireframeAnnotationsToggle
+                    data-annotations-toggle={true}
+                    data-test="toggle"
+                    onClick={[Function]}
+                    open={true}
+                    title="Toggle annotations"
+                  >
+                    <button
+                      className="css-1oei1w8-WireframeAnnotationsToggle-WireframeAnnotationsToggle e17wjjt14"
+                      data-annotations-toggle={true}
+                      data-test="toggle"
+                      onClick={[Function]}
+                      open={true}
+                      title="Toggle annotations"
+                    >
+                      <span>
+                        →
+                      </span>
+                    </button>
+                  </WireframeAnnotationsToggle>
+                  <header
+                    className="annotations"
+                  >
+                    <h1>
+                      Annotations
+                    </h1>
+                    <WireframeAnnotationsClose
+                      aria-label="Close annotations"
+                      onClick={[Function]}
+                    >
+                      <button
+                        aria-label="Close annotations"
+                        className="css-1x7w1eu-WireframeAnnotationsClose e17wjjt15"
+                        onClick={[Function]}
+                      >
+                        ×
+                      </button>
+                    </WireframeAnnotationsClose>
+                  </header>
+                  <WireframeAnnotationNotesContainer>
+                    <div
+                      className="css-1we6cgy-WireframeAnnotationNotesContainer e17wjjt16"
+                    >
+                      <WireframeAnnotationNotes>
+                        <NoAnnotations>
+                          <div
+                            className="css-94sf93-NoAnnotations e19rueun1"
+                          >
+                            <p>
+                              No annotations on this page
+                            </p>
+                          </div>
+                        </NoAnnotations>
+                      </WireframeAnnotationNotes>
+                    </div>
+                  </WireframeAnnotationNotesContainer>
+                </div>
+              </WireframeAnnotationsWrapper>
+            </section>
+          </WireframeAnnotationsContainer>
+        </div>
+      </WireframeMainContainer>
+    </WireframeProvider>
+  </WireframeContainer>
+</WireframeProvider>
+`;

@@ -6,4 +6,7 @@ module.exports = {
   testMatch: [`${__dirname}/src/**/*.spec.{js,jsx,ts,tsx}`],
   rootDir: "../../",
   setupFiles: ["<rootDir>/test/setupTests.js"],
+  snapshotSerializers: [
+    "enzyme-to-json/serializer",
+  ],
 };
