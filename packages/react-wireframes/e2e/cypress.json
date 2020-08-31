@@ -1,7 +1,6 @@
 {
-  "reporter": "junit",
+  "reporter": "../../../node_modules/cypress-multi-reporters",
   "reporterOptions": {
-    "mochaFile": "../../../reports/e2e-react-wireframes-[hash].xml",
-    "toConsole": false
+    "configFile": "reporter-config.json"
   }
 }
