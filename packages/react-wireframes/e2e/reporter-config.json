@@ -1,7 +1,7 @@
 {
   "reporterEnabled": "mochawesome",
   "mochawesomeReporterOptions": {
-    "reportDir": "../../../reports/cypress/results/json/react-wireframes",
+    "reportDir": "../reports/cypress/results",
     "overwrite": false,
     "html": false,
     "json": true
