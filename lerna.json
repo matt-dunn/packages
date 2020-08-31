@@ -5,7 +5,12 @@
   "version": "independent",
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "*.spec.*",
+        "*.fixtures.*",
+        "*.stories.*"
+      ]
     },
     "version": {
       "message": "chore(release): release"

@@ -26,13 +26,13 @@
     "@types/express": "^4.17.7"
   },
   "scripts": {
-    "build:docs": "typedoc --out ../../dist/packages/api/docs src --mode file --exclude \"**/*+(.spec|.e2e).*\" --excludeNotExported",
+    "docs:build": "typedoc --out ../../dist/packages/api/docs src --mode file --exclude \"**/*+(.spec|.e2e).*\" --excludeNotExported",
     "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx,.mdx --fix",
     "test": "jest --coverage --passWithNoTests",
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.spec.ts --root-mode upward",
     "prebuild": "npm run lint",
-    "build": "npm run build:js && npm run build:types && yarn run build:docs"
+    "build": "npm run build:js && npm run build:types && yarn run docs:build"
   },
   "gitHead": "00b14bc2a91505527abffe9a097293437f457f3b"
 }
