@@ -1,1 +1,7 @@
-{}
+{
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "../../../reports/e2e-react-wireframes-[hash].xml",
+    "toConsole": false
+  }
+}
