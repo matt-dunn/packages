@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/react-wireframes",
-  "version": "2.1.15",
+  "version": "2.1.16",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/react-wireframes",
   "description": "React component to annotate your components — useful for prototypes and proof of concepts",
