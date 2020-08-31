@@ -85,7 +85,7 @@
     "lint": "eslint ./ --ext .jsx,.js,.ts,.tsx,.mdx --fix",
     "test:unit": "jest --coverage --passWithNoTests",
     "test:e2e": "lerna run test:e2e --parallel",
-    "test": "concurrently \"yarn test:unit\" \"yarn test:e2e\"",
+    "test": "yarn test:unit && yarn test:e2e",
     "prebuild": "yarn test",
     "build": "lerna exec --since --parallel -- yarn build",
     "postbuild": "yarn storybook:build",
