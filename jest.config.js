@@ -12,7 +12,12 @@ module.exports = {
   ],
   reporters: [
     "default",
-    ["jest-junit", { outputDirectory: "./reports" }],
+    ["jest-junit", {
+      outputDirectory: "./reports",
+      suiteNameTemplate: "{filepath}",
+      classNameTemplate: "{classname}",
+      titleTemplate: "{title}"
+    }],
   ],
   testURL: "http://localhost/",
   // moduleNameMapper: {
