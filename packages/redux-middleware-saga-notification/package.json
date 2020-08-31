@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-middleware-saga-notification",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-middleware-saga-notification",
   "description": "Redux Saga middleware for application notifications",

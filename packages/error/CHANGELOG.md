@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.9.16 (2020-08-31)
+
+**Note:** Version bump only for package @matt-dunn/error
+
+
+
+
+
 ## [1.9.15](https://github.com/matt-dunn/packages/compare/@matt-dunn/error@1.9.14...@matt-dunn/error@1.9.15) (2020-08-30)
 
 **Note:** Version bump only for package @matt-dunn/error
