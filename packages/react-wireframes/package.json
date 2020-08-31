@@ -29,15 +29,19 @@
     "access": "public"
   },
   "scripts": {
-    "build:docs": "typedoc --out ../../dist/packages/react-wireframes/docs src --mode file --exclude \"**/*+(.spec|.e2e).*\" --excludeNotExported",
-    "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx,.mdx --fix",
-    "test": "jest --coverage --passWithNoTests",
+    "docs:build": "typedoc --out ../../dist/packages/react-wireframes/docs src --mode file --exclude \"**/*+(.spec|.e2e).*\" --excludeNotExported",
+    "lint": "eslint ./src ./e2e --ext .jsx,.js,.ts,.tsx,.mdx --fix",
+    "test": "yarn test:unit && yarn test:e2e",
+    "test:unit": "jest --coverage --passWithNoTests",
+    "test:e2e": "concurrently --success first --kill-others \"cross-env CYPRESS_BASE_URL=http://127.0.0.1:8090/ cypress run --project ./e2e\" \"yarn examples:serve\"",
+    "test:e2e:dev": "concurrently --success first --kill-others \"cross-env CYPRESS_BASE_URL=https://127.0.0.1:8090/ cypress open --project ./e2e\" \"yarn examples:start\"",
     "build:types": "tsc -b tsconfig.build.json",
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.story.tsx,**/*.spec.ts,**/*.spec.tsx --root-mode upward",
     "prebuild": "npm run lint",
-    "build": "npm run build:js && npm run build:types && yarn run build:examples && yarn run build:docs",
-    "start:examples": "parcel docs/examples/public/index.html --https --out-dir .build",
-    "build:examples": "parcel build docs/examples/public/index.html --public-url ./ --no-cache --out-dir ../../dist/packages/react-wireframes/examples"
+    "build": "npm run build:js && npm run build:types && yarn run examples:build && yarn run docs:build && npm run test:e2e",
+    "examples:start": "parcel docs/examples/public/index.html --https --out-dir .build --port 8090",
+    "examples:build": "parcel build docs/examples/public/index.html --public-url ./ --no-cache --out-dir ../../dist/packages/react-wireframes/examples",
+    "examples:serve": "http-server ../../dist/packages/react-wireframes/examples/ --port 8090 --silent"
   },
   "dependencies": {
     "classnames": "^2.2.6",

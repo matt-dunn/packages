@@ -1,0 +1,6 @@
+{
+  "reporter": "../../../node_modules/cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}
