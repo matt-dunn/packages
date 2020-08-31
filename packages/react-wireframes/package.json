@@ -39,9 +39,14 @@
     "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.story.tsx,**/*.spec.ts,**/*.spec.tsx --root-mode upward",
     "prebuild": "npm run lint",
     "build": "npm run build:js && npm run build:types && yarn run examples:build && yarn run docs:build && npm run test:e2e",
+    "postbuild": "yarn report:build",
     "examples:start": "parcel docs/examples/public/index.html --https --out-dir .build --port 8090",
     "examples:build": "parcel build docs/examples/public/index.html --public-url ./ --no-cache --out-dir ../../dist/packages/react-wireframes/examples",
-    "examples:serve": "http-server ../../dist/packages/react-wireframes/examples/ --port 8090 --silent"
+    "examples:serve": "http-server ../../dist/packages/react-wireframes/examples/ --port 8090 --silent",
+    "report:cypress:merge": "mochawesome-merge reports/cypress/results/**/*.json > reports/cypress/index.json",
+    "report:cypress:generate": "marge reports/cypress/index.json --reportDir ../../dist/packages/react-wireframes/e2e --assetsDir ../../dist/packages/react-wireframes/e2e/assets --reportPageTitle index.html",
+    "report:cypress:build": "yarn report:cypress:merge && yarn report:cypress:generate && copyfiles -f **/cypress/videos/**/* ../../dist/packages/react-wireframes/e2e/videos\n",
+    "report:build": "yarn report:cypress:build"
   },
   "dependencies": {
     "classnames": "^2.2.6",

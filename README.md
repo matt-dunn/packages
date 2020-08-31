@@ -12,5 +12,3 @@
 View all [packages](./packages).
 
 [Storybook](https://matt-dunn.github.io/packages/storybook/)
-
-[e2e test results](https://matt-dunn.github.io/packages/e2e/)
