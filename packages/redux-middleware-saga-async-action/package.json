@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-middleware-saga-async-action",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-middleware-saga-async-action",
   "description": "Redux Saga middleware for decorating async actions",
@@ -39,7 +39,7 @@
     "uuid": "^8.3.0"
   },
   "peerDependencies": {
-    "redux-saga": "1.*",
-    "@matt-dunn/state-mutate-with-status": "1.*"
+    "@matt-dunn/state-mutate-with-status": "1.*",
+    "redux-saga": "1.*"
   }
 }

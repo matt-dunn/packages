@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-middleware-saga-notification",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-middleware-saga-notification",
   "description": "Redux Saga middleware for application notifications",
@@ -38,11 +38,11 @@
     "@types/lodash": "^4.14.159"
   },
   "peerDependencies": {
+    "@matt-dunn/error": "1.*",
+    "@matt-dunn/notification": "1.*",
+    "@matt-dunn/state-mutate-with-status": "1.*",
     "lodash": "4.*",
     "redux-saga": "1.*",
-    "typesafe-actions": "5.*",
-    "@matt-dunn/state-mutate-with-status": "1.*",
-    "@matt-dunn/notification": "1.*",
-    "@matt-dunn/error": "1.*"
+    "typesafe-actions": "5.*"
   }
 }

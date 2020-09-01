@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/state-mutate-with-status",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/state-mutate-with-status",
   "description": "State mutator with decorated status for async actions",
@@ -45,7 +45,7 @@
     "simple-deep-freeze": "^0.0.2"
   },
   "peerDependencies": {
-    "lodash": "4.*",
-    "@matt-dunn/error": "1.*"
+    "@matt-dunn/error": "1.*",
+    "lodash": "4.*"
   }
 }

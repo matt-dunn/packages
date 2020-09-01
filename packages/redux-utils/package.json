@@ -1,6 +1,6 @@
 {
   "name": "@matt-dunn/redux-utils",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "Matt Dunn",
   "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/redux-utils",
   "description": "Redux utils",
@@ -38,8 +38,8 @@
     "is-promise": "^4.0.0"
   },
   "peerDependencies": {
+    "@matt-dunn/state-mutate-with-status": "1.*",
     "lodash": "4.*",
-    "redux": "4.*",
-    "@matt-dunn/state-mutate-with-status": "1.*"
+    "redux": "4.*"
   }
 }
