@@ -39,6 +39,7 @@
     "uuid": "^8.3.0"
   },
   "peerDependencies": {
-    "redux-saga": "1.*"
+    "redux-saga": "1.*",
+    "@matt-dunn/state-mutate-with-status": "1.*"
   }
 }
