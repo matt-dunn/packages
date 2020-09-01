@@ -39,6 +39,7 @@
   },
   "peerDependencies": {
     "lodash": "4.*",
-    "redux": "4.*"
+    "redux": "4.*",
+    "@matt-dunn/state-mutate-with-status": "1.*"
   }
 }

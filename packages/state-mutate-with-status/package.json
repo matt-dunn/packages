@@ -45,6 +45,7 @@
     "simple-deep-freeze": "^0.0.2"
   },
   "peerDependencies": {
-    "lodash": "4.*"
+    "lodash": "4.*",
+    "@matt-dunn/error": "1.*"
   }
 }
