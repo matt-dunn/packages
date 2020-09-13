@@ -5,11 +5,14 @@
  */
 
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
+import { axe, toHaveNoViolations } from "jest-axe";
 
 import { WireframeAnnotation, WireframeAnnotationAPI } from "../../api";
 
 import { Identifier as Component } from "../Identifier";
+
+expect.extend(toHaveNoViolations);
 
 describe("Wireframe: WireframeAnnotationsNote", () => {
   let annotation: WireframeAnnotation;
@@ -27,6 +30,20 @@ describe("Wireframe: WireframeAnnotationsNote", () => {
         description: "Test description",
       },
     };
+  });
+
+  it("should be accessible", async () => {
+    const wrapper = mount(
+      <Component
+        annotation={annotation}
+      />,
+    );
+
+    expect(await axe(wrapper.getDOMNode(), {
+      rules: {
+        region: { enabled: false }
+      }
+    })).toHaveNoViolations();
   });
 
   it("should render correctly", () => {
