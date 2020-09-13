@@ -1,0 +1,30 @@
+{
+  "name": "@matt-dunn/test",
+  "version": "1.14.10",
+  "author": "Matt Dunn",
+  "homepage": "https://github.com/matt-dunn/packages/tree/master/packages/api",
+  "description": "API helpers",
+  "keywords": [
+    "utils",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-dunn/packages.git"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "../../node_modules/.bin/jest --coverage --passWithNoTests"
+  }
+}
